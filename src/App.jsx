@@ -1,7 +1,9 @@
+import DeveSection from "./modules/DeveSection";
+
 const App = () => {
   return (
-    <div className="App">
-      <p className="text-primary">App starter</p>
+    <div>
+      <DeveSection />
     </div>
   );
 };
