@@ -13,12 +13,12 @@ function NFTGameDev() {
         <div className='bg-opacity-5 bg-white w-[312px] h-[343px] p-6 mb-8 rounded-[20px]'>
           <img className='mb-5' src={`${NFTGameSvg}`} alt="NFT Game Development"/>
           <h4 className='text-xl font-medium mb-2'>Full service cycle</h4>
-          <p className=' text-base text-paragraph'>We can provide a full-service solution for your software development projects, from architecture design to production deployment. Our professional teams handle challenges at any stage of the product development cycle.</p>
+          <p className=' text-base text-neutral-400'>We can provide a full-service solution for your software development projects, from architecture design to production deployment. Our professional teams handle challenges at any stage of the product development cycle.</p>
         </div>
         <div className='bg-opacity-5 bg-white w-[312px] h-[343px] p-6 mb-8 rounded-[20px]'>
           <img className='mb-5' src={`${NFTGameSvg}`} alt="NFT Game Development"/>
           <h4 className='text-xl font-medium mb-2'>Full service cycle</h4>
-          <p className='text-base text-paragraph'>We can provide a full-service solution for your software development projects, from architecture design to production deployment. Our professional teams handle challenges at any stage of the product development cycle.</p>
+          <p className='text-base text-neutral-400'>We can provide a full-service solution for your software development projects, from architecture design to production deployment. Our professional teams handle challenges at any stage of the product development cycle.</p>
         </div>
       </div>
     </div>
