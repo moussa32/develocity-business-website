@@ -8,7 +8,12 @@ module.exports = {
         secondary: "#141414",
         text: "#7b7b7b",
         black: "#070707",
+        whiteText: "#FAFAFA",
+        paragraph: "#A3A3A3",
       },
+      backgroundImage: {
+        'main-bg': "url('./src/assets/main-bg.svg')" ,
+      }
     },
   },
   plugins: [],
