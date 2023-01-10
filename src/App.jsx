@@ -5,11 +5,11 @@ import DeveSection from "./modules/DeveSection";
 
 const App = () => {
   return (
-    <div className="App bg-[rgba(7,7,7)] text-whiteText text-neutral-50">
+    <div className="bg-[rgba(7,7,7)] text-whiteText text-neutral-50">
       <Empowering />
+      <DeveSection />
       <Cryptocurrency />
       <NFTGameDev />
-      <DeveSection />
     </div>
   );
 };
