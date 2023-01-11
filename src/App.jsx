@@ -8,8 +8,8 @@ import WeWorkWith from "./modules/WeWorkWith";
 const App = () => {
   return (
     <div className="bg-[rgba(7,7,7)] text-whiteText text-neutral-50">
-      <div className="container mx-auto">
         <Empowering />
+      <div className="container mx-auto">
         <DeveSection />
         <Cryptocurrency />
         <WeWorkWith />
