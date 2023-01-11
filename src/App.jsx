@@ -4,6 +4,8 @@ import NFTGameDev from "./modules/NFTGameDev";
 import DeveSection from "./modules/DeveSection";
 import MetaverseSection from "./modules/MetaverseSection";
 import WeWorkWith from "./modules/WeWorkWith";
+import ProjectIdea from "./modules/ProjectIdea";
+import Footer from "./modules/Footer";
 
 const App = () => {
   return (
@@ -15,6 +17,10 @@ const App = () => {
         <WeWorkWith />
         <NFTGameDev />
         <MetaverseSection />
+        <div>
+          <ProjectIdea/>
+          <Footer/>
+        </div>
       </div>
     </div>
   );
