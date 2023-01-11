@@ -4,17 +4,23 @@ import NFTGameDev from "./modules/NFTGameDev";
 import DeveSection from "./modules/DeveSection";
 import MetaverseSection from "./modules/MetaverseSection";
 import WeWorkWith from "./modules/WeWorkWith";
+import ProjectIdea from "./modules/ProjectIdea";
+import Footer from "./modules/Footer";
 
 const App = () => {
   return (
     <div className="bg-[rgba(7,7,7)] text-whiteText text-neutral-50">
-      <div className="container mx-auto">
         <Empowering />
+      <div className="container mx-auto">
         <DeveSection />
         <Cryptocurrency />
         <WeWorkWith />
         <NFTGameDev />
         <MetaverseSection />
+        <div>
+          <ProjectIdea/>
+          <Footer/>
+        </div>
       </div>
     </div>
   );
