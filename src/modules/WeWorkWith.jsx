@@ -10,7 +10,7 @@ import Solana from "../assets/Solana.png";
 
 function WeWorkWith() {
   return (
-    <div className="bg-black text-center py-16">
+    <div className="bg-black text-center my-16">
       <div className="container mx-auto">
         <p className="text-xs text-indigo-400 capitalize">
           for successful digital transformation
