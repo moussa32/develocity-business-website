@@ -2,6 +2,7 @@ import Cryptocurrency from "./modules/Cryptocurrency";
 import Empowering from "./modules/Empowering";
 import NFTGameDev from "./modules/NFTGameDev";
 import DeveSection from "./modules/DeveSection";
+import WeWorkWith from "./modules/WeWorkWith";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Cryptocurrency />
       <NFTGameDev />
       <DeveSection />
+      <WeWorkWith />
     </div>
   );
 };
