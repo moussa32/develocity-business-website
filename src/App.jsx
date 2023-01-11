@@ -17,11 +17,11 @@ const App = () => {
         <WeWorkWith />
         <NFTGameDev />
         <MetaverseSection />
-        <div>
+      </div>
+      <div className="bg-footer-bg bg-center bg-no-repeat">
           <ProjectIdea/>
           <Footer/>
         </div>
-      </div>
     </div>
   );
 };
