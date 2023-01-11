@@ -31,6 +31,7 @@ module.exports = {
       },
       backgroundImage: {
         "main-bg": "url('./src/assets/main-bg.svg')",
+        "footer-bg": "url('./src/assets/footer-bg.svg')",
       },
     },
   },

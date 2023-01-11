@@ -7,7 +7,7 @@ import Telegram from "../assets/Telegram.svg"
 
 const Footer = () => {
   return (
-    <div className='pt-20 mt-24 flex flex-col md:flex-row justify-between text-center
+    <div className='pt-20 container mx-auto mt-24 flex flex-col md:flex-row justify-between text-center
     border-t-[1px] border-[rgb(77,76,76)] md:text-left'>
       <div>
         <img className='mx-auto md:mx-0' src={`${footerLogo}`} alt="footer logo"/>

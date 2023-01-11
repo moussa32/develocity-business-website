@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
-import mainIcons from "../assets/main-Icons.svg";
+import mainIcons from "../assets/main-icons.svg";
 
 const Empowering = () => {
   return (
