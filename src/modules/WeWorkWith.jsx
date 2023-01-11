@@ -21,7 +21,7 @@ function WeWorkWith() {
           Blockchains we work with
         </h3>
         <div className="grid px-4 text-left mt-28 gap-6 md:grid-cols-2 lg:grid-cols-4 md:px-0">
-          <div className="w-11/12 relative flex justify-center">
+          <div className="w-11/12 mb-6 relative flex justify-center">
             <div className="z-0 absolute h-16 w-20 -top-7">
               <img className="blur-lg" src={`${BinanceEllipse}`} />
             </div>
@@ -30,8 +30,7 @@ function WeWorkWith() {
               <span className="text-xl">Binance</span>
             </div>
           </div>
-
-          <div className="w-11/12 relative flex justify-center">
+          <div className="w-11/12 mb-6 relative flex justify-center">
             <div className="z-0 absolute h-16 w-20 -top-7">
               <img className="blur-lg" src={`${EthereumEllipse}`} />
             </div>
@@ -40,12 +39,12 @@ function WeWorkWith() {
               <span className="text-xl">Ethereum</span>
             </div>
           </div>
-          <div className="w-11/12 relative flex justify-center">
+          <div className="w-11/12 mb-4 relative flex justify-center">
             <div className="z-0 absolute h-16 w-16 -top-7">
               <img src={`${PoloygonEllipse}`} />
             </div>
             <div className="bg-indigo-800 z-10 rounded-lg h-full w-full flex flex-col justify-center">
-              <div className="h-4/6 flex flex-col justify-between items-center mt-14">
+              <div className="h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
                 <div className="flex flex-col items-center">
                   <img className="mb-4 h-28 w-20" src={`${Polygon}`} />
                   <span className="text-xl">Polygon MATIC</span>
@@ -66,7 +65,7 @@ function WeWorkWith() {
               </div>
             </div>
           </div>
-          <div className="w-11/12 relative flex justify-center">
+          <div className="w-11/12 mb-4 relative flex justify-center">
             <div className="z-0 absolute h-16 w-20 -top-7">
               <img className="blur-lg" src={`${SolanaEllipse}`} />
             </div>

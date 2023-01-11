@@ -14,7 +14,7 @@ function NFTMarket() {
   return (
     <div className="text-center my-24">
       <div className="container mx-auto">
-        <h1 className="ml-6 text-blue-200 font-bold text-7xl my-2.5">
+        <h1 className="ml-6 text-blue-200 font-bold text-4xl md:text-7xl my-2.5">
           NFT and NFT Marketplace
         </h1>
         <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2 flex">
@@ -57,8 +57,8 @@ function NFTMarket() {
               ))}
             </div>
           </div>
-          <div className="order-1 lg:order-2">
-            <img src={`${NFT}`} />
+          <div className="order-1 lg:order-2 flex justify-center md:justify-start mb-20">
+            <img  src={`${NFT}`} />
           </div>
         </div>
       </div>

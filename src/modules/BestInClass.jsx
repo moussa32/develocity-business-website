@@ -4,7 +4,7 @@ function BestInClass() {
   return (
     <div className="text-center my-24">
       <div className="container mx-auto">
-        <h1 className="ml-6 text-blue-200 font-bold text-7xl my-2.5">
+        <h1 className="ml-6 text-blue-200 font-bold text-4xl md:text-7xl my-2.5">
           Best in Class WEB 3.0 and Blockchain Solutions
         </h1>
         <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2 flex">
