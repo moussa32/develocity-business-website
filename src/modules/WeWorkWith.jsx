@@ -1,4 +1,6 @@
 import React from "react";
+import LinkArrow from "../assets/linkArrow.svg";
+
 import BinanceEllipse from "../assets/BinanceEllipse.png";
 import SolanaEllipse from "../assets/SolanaEllipse.png";
 import PoloygonEllipse from "../assets/PoloygonEllipse.png";
@@ -40,11 +42,28 @@ function WeWorkWith() {
           </div>
           <div className="w-11/12 relative flex justify-center">
             <div className="z-0 absolute h-16 w-16 -top-7">
-              <img  src={`${PoloygonEllipse}`} />
+              <img src={`${PoloygonEllipse}`} />
             </div>
-            <div className="bg-indigo-800 z-10 rounded-lg h-80 w-full flex flex-col justify-center items-center">
-              <img className="mb-4 h-28 w-20" src={`${Polygon}`} />
-              <span className="text-xl">Polygon MATIC</span>
+            <div className="bg-indigo-800 z-10 rounded-lg h-full w-full flex flex-col justify-center">
+              <div className="h-4/6 flex flex-col justify-between items-center mt-14">
+                <div className="flex flex-col items-center">
+                  <img className="mb-4 h-28 w-20" src={`${Polygon}`} />
+                  <span className="text-xl">Polygon MATIC</span>
+                </div>
+                <p className="text-sm flex">
+                  https://polygonscan.com
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    className="fill-white ml-2 font-bold"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z" />
+                  </svg>
+                </p>
+              </div>
             </div>
           </div>
           <div className="w-11/12 relative flex justify-center">

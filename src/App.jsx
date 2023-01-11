@@ -4,6 +4,8 @@ import NFTGameDev from "./modules/NFTGameDev";
 import DeveSection from "./modules/DeveSection";
 import MetaverseSection from "./modules/MetaverseSection";
 import WeWorkWith from "./modules/WeWorkWith";
+import BestInClass from "./modules/BestInClass";
+import NFTMarket from "./modules/NFTMarket";
 
 const App = () => {
   return (
@@ -11,8 +13,10 @@ const App = () => {
       <div className="container mx-auto">
         <Empowering />
         <DeveSection />
+        <BestInClass />
         <Cryptocurrency />
         <WeWorkWith />
+        <NFTMarket />
         <NFTGameDev />
         <MetaverseSection />
       </div>
