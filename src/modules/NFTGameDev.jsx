@@ -5,7 +5,7 @@ import NFTGameBg from "../assets/NFTGame-bg.svg";
 function NFTGameDev() {
   return (
     <div className="container w-[300px] h-auto md:w-[1216px] md:h-[479px] mb-20 mt-20 md:mb-48 md:mt-48 mx-auto bg-gradient-to-r from-[#312E81] to-[#191741] rounded-[40px] p-7">
-      <h1 className="text-right mr-24 text-4xl font-normal mb-5 mt-8">
+      <h1 className="text-center sm:text-right mr-0 md:mr-24 text-4xl font-normal mb-5 mt-8">
         NFT Game Development
       </h1>
       <div className="flex flex-col md:flex-row justify-between gap-8">

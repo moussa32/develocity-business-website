@@ -2,14 +2,18 @@ import React from "react";
 import Navbar from "./Navbar";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
 import mainIcons from "../assets/main-icons.svg";
+import SideMenu from "./SideMenu";
 
 const Empowering = () => {
   return (
-    <div className={`main-bg w-[100%] text-center bg-center bg-no-repeat md:text-left md:h-[810px]`}>
+    <div className={`bg-main-bg bg-cover bg-no-repeat text-center md:text-left md:h-[810px]`}>
+      <SideMenu />
       <Navbar />
       <div className="container grid grid-cols-2 mt-36 mx-auto">
-        <div className="w-[300px] md:w-[593px]">
-          <h2 className="md:text-6xl text-4xl font-bold mb-6">Empowering the future of Finance</h2>
+        <div className="w-[200%] md:w-[593px]">
+          <h2 className="md:text-6xl text-4xl text-center md:text-left font-bold mb-6">
+            Empowering the future of Finance
+          </h2>
           <p className="text-base text-neutral-300 mb-8">
             Develocity is a full-service software development, mobile app, and data analytics company, providing
             cutting-edge web 3 and blockchain solutions to businesses of all sizes.
