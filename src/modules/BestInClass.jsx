@@ -2,13 +2,13 @@ import React from "react";
 import BestWithSection from "../assets/BestWithSection.png";
 function BestInClass() {
   return (
-    <div className="text-center my-24">
+    <div className="text-center  my-24">
       <div className="container mx-auto">
         <h1 className="ml-6 text-blue-200 font-bold text-4xl md:text-7xl my-2.5">
           Best in Class WEB 3.0 and Blockchain Solutions
         </h1>
         <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2 flex">
-          <div className="flex flex-col text-left order-2 lg:order-1">
+          <div className="flex flex-col text-center md:text-left order-2 lg:order-1">
             <p className="ml-6 text-xs text-indigo-400 capitalize mb-1">
               HARNESS THE POWER OF WEB 3.0 AND BLOCKCHAIN TECHNOLOGY
             </p>

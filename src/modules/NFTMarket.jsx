@@ -18,7 +18,7 @@ function NFTMarket() {
           NFT and NFT Marketplace
         </h1>
         <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2 flex">
-          <div className="flex flex-col text-left order-2 lg:order-1">
+          <div className="flex flex-col text-center md:text-left order-2 lg:order-1">
             <p className="ml-6 text-xs text-indigo-400 capitalize mb-1">
               GET STARTED WITH NFT DEVELOPMENT
             </p>
@@ -48,7 +48,7 @@ function NFTMarket() {
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                     />
                   </svg>
