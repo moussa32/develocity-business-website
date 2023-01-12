@@ -43,9 +43,9 @@ function WeWorkWith() {
             <div className="z-0 absolute h-16 w-16 -top-7">
               <img src={`${PoloygonEllipse}`} />
             </div>
-            <div className="bg-indigo-800 z-10 rounded-lg h-full w-80 flex flex-col justify-center">
+            <div className="bg-indigo-800 z-10 rounded-lg h-80 w-full flex flex-col justify-center">
               <div className="h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
-                <div className="pt-8 flex flex-col items-center">
+                <div className="pt- flex flex-col items-center">
                   <img className="mb-4" src={`${Polygon}`} />
                   <span className="text-xl">Polygon MATIC</span>
                 </div>
