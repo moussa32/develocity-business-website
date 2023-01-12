@@ -26,7 +26,7 @@ function WeWorkWith() {
               <img className="blur-lg" src={`${BinanceEllipse}`} />
             </div>
             <div className="bg-neutral-900  rounded-lg h-80 w-full flex flex-col justify-center items-center">
-              <img className="mb-4 h-28 w-20" src={`${Binance}`} />
+              <img className="mb-4" src={`${Binance}`} />
               <span className="text-xl">Binance</span>
             </div>
           </div>
@@ -35,18 +35,18 @@ function WeWorkWith() {
               <img className="blur-lg" src={`${EthereumEllipse}`} />
             </div>
             <div className="bg-neutral-900  rounded-lg h-80 w-full flex flex-col justify-center items-center">
-              <img className="mb-4 h-28 w-20" src={`${Ethereum}`} />
+              <img className="mb-4" src={`${Ethereum}`} />
               <span className="text-xl">Ethereum</span>
             </div>
           </div>
-          <div className="mb-4 relative flex justify-center">
+          <div className="mb-6 relative flex justify-center">
             <div className="z-0 absolute h-16 w-16 -top-7">
               <img src={`${PoloygonEllipse}`} />
             </div>
-            <div className="bg-indigo-800 z-10 rounded-lg h-full w-full flex flex-col justify-center">
+            <div className="bg-indigo-800 z-10 rounded-lg h-full w-80 flex flex-col justify-center">
               <div className="h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
-                <div className="flex flex-col items-center">
-                  <img className="mb-4 h-28 w-20" src={`${Polygon}`} />
+                <div className="pt-8 flex flex-col items-center">
+                  <img className="mb-4" src={`${Polygon}`} />
                   <span className="text-xl">Polygon MATIC</span>
                 </div>
                 <p className="text-sm flex">
@@ -70,7 +70,7 @@ function WeWorkWith() {
               <img className="blur-lg" src={`${SolanaEllipse}`} />
             </div>
             <div className="bg-neutral-900  rounded-lg h-80 w-full flex flex-col justify-center items-center">
-              <img className="mb-4 h-28 w-20" src={`${Solana}`} />
+              <img className="mb-4" src={`${Solana}`} />
               <span className="text-xl">Solana</span>
             </div>
           </div>
