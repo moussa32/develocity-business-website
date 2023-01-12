@@ -30,7 +30,6 @@ module.exports = {
         ],
       },
       backgroundImage: {
-        "main-bg": "url('./src/assets/main-bg2.png')",
         "footer-bg": "url('./src/assets/footer-bg2.png')",
       },
     },

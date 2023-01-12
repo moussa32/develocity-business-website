@@ -1,22 +1,22 @@
-import React from 'react'
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import React from "react";
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Company', href: '#', current: false },
-  { name: 'Services', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
-]
+  { name: "Home", href: "#", current: true },
+  { name: "Company", href: "#", current: false },
+  { name: "Services", href: "#", current: false },
+  { name: "Contact", href: "#", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 const SideMenu = () => {
   return (
-    <Disclosure as="nav">
+    <Disclosure as="nav" className="md:hidden">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -37,16 +37,18 @@ const SideMenu = () => {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
-              {navigation.map((item) => (
+              {navigation.map(item => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-opacity-5 bg-white text-white' : 'text-neutral-300 hover:bg-opacity-5 hover:bg-white hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "bg-opacity-5 bg-white text-white"
+                      : "text-neutral-300 hover:bg-opacity-5 hover:bg-white hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -56,12 +58,7 @@ const SideMenu = () => {
         </>
       )}
     </Disclosure>
-  )
-}
+  );
+};
 
-export default SideMenu
-
-
-
-
-
+export default SideMenu;
