@@ -16,7 +16,7 @@ function classNames(...classes) {
 
 const SideMenu = () => {
   return (
-    <Disclosure as="nav" className="md:hidden">
+    <Disclosure as="nav" className="relative md:hidden z-30">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
