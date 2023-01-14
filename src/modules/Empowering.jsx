@@ -9,8 +9,10 @@ const Empowering = () => {
   return (
     <div className="relative main-bg bg-center bg-no-repeat text-center overflow-hidden w-full md:bg-cover md:bg-right md:text-left md:h-[810px]">
       <img src={GradiantBackground} className="absolute h-full w-full z-10" />
-      <SideMenu />
-      <Navbar />
+      <div className="fixed w-full z-40">
+        <SideMenu />
+        <Navbar />
+      </div>
       <div className="container grid grid-cols-2 mt-36 mx-auto z-20">
         <div className="w-[200%] md:w-[593px] z-20">
           <h2 className="md:text-6xl text-4xl text-center md:text-left font-bold mb-6">
