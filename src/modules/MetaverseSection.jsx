@@ -45,7 +45,7 @@ const MetaverseSection = () => {
         </div>
       </section>
       <section className="text-center mt-20 py-20">
-        <span className="text-xs text-indigo-300 uppercase">FIND YOUR PERFECT APPLICATION</span>
+        <span className="text-xs text-indigo-400 uppercase">FIND YOUR PERFECT APPLICATION</span>
         <h2 className="text-PolySans text-[48px] font-light">Multitude of Metaverse Use Cases</h2>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-20 gap-x-22 mt-20">
           <div>

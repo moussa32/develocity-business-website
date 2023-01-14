@@ -14,8 +14,8 @@ function WeWorkWith() {
   return (
     <div className="bg-black text-center my-16">
       <div className="container mx-auto">
-        <p className="text-xs text-indigo-400 capitalize">for successful digital transformation</p>
-        <h3 className="text-white font-bold text-4xl my-2.5">Blockchains we work with</h3>
+        <p className="text-xs text-indigo-400 capitalize">TOP BLOCKCHAINS ARE AT YOUR DISPOSAL</p>
+        <h3 className="text-white font-PolySans font-extralight text-6xl my-2.5">Blockchains we work with</h3>
         <div className="grid px-4 text-left mt-28 gap-6 md:grid-cols-2 lg:grid-cols-4 md:px-0">
           <div className="mb-6 relative flex justify-center group">
             <div className="z-0 absolute h-16 w-16 -top-7">

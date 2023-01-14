@@ -14,27 +14,19 @@ function NFTMarket() {
   return (
     <div className="text-center my-24">
       <div className="container mx-auto">
-        <h1 className="ml-6 text-blue-200 font-bold text-4xl md:text-7xl my-2.5">
-          NFT and NFT Marketplace
-        </h1>
+        <h1 className="ml-6 text-indigo-300 text-4xl md:text-7xl my-2.5">NFT and NFT Marketplace</h1>
         <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col text-center md:text-left order-2 lg:order-1">
-            <p className="ml-6 text-xs text-indigo-400 capitalize mb-1">
-              GET STARTED WITH NFT DEVELOPMENT
-            </p>
-            <h3 className="w-5/6 ml-6 text-white font-bold text-5xl mb-9">
-              NFT Marketplace and Metaverse Development
-            </h3>
+            <p className="ml-6 text-xs text-indigo-500 capitalize mb-4">GET STARTED WITH NFT DEVELOPMENT</p>
+            <h3 className="w-5/6 ml-6 text-white text-5xl mb-9">NFT Marketplace and Metaverse Development</h3>
             <p className="ml-6 text-gray-400 text-base pb-7 w-5/6">
-              We have decades of experience in NFT development and can help you
-              create a robust and secure marketplace for NFTs. We also offer
-              smart contract programming and audit services to ensure the
-              security and effectiveness of your NFTs.
+              We have decades of experience in NFT development and can help you create a robust and secure marketplace
+              for NFTs. We also offer smart contract programming and audit services to ensure the security and
+              effectiveness of your NFTs.
             </p>
             <p className="ml-6 text-gray-400 text-base pb-7 w-5/6">
-              Offer your customers enhanced and seamless NFT minting, selling
-              and buying on a secure NFT platform that brings together global
-              NFT creators and buyers at one place.
+              Offer your customers enhanced and seamless NFT minting, selling and buying on a secure NFT platform that
+              brings together global NFT creators and buyers at one place.
             </p>
             <div className="grid px-4 gap-2 grid-cols-2">
               {list.map((item, index) => (
@@ -58,7 +50,7 @@ function NFTMarket() {
             </div>
           </div>
           <div className="order-1 lg:order-2 flex justify-center md:justify-start mb-20">
-            <img  src={`${NFT}`} />
+            <img src={`${NFT}`} />
           </div>
         </div>
       </div>

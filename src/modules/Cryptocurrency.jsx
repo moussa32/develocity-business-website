@@ -9,22 +9,18 @@ const Cryptocurrency = () => {
           <img src={`${CryptoSvg}`} />
         </div>
         <div>
-          <span className="uppercase text-xs text-indigo-500 font-semibold mb-2">
-            Cryptocurrency Creation
-          </span>
+          <span className="uppercase text-xs text-indigo-500 mb-4 block">Cryptocurrency Creation</span>
           <h4 className="text-3xl md:text-4xl font-normal mb-6">
             Cryptocurrency Development and Initial Coin Offering (ICO).
           </h4>
           <p className="text-base mb-6 text-neutral-400">
-            Drive better business outcomes across digital channels and business
-            processes through precise analytics that deliver real-time business
-            observability to improve IT and business collaboration.
+            Drive better business outcomes across digital channels and business processes through precise analytics that
+            deliver real-time business observability to improve IT and business collaboration.
           </p>
           <p className="text-base text-neutral-400">
-            Base your business decisions on precise data analysis for web and
-            mobile conversion, revenue impact, release validation, and business
-            processes by combining business context from anywhere with
-            full-stack application analytics and performance.
+            Base your business decisions on precise data analysis for web and mobile conversion, revenue impact, release
+            validation, and business processes by combining business context from anywhere with full-stack application
+            analytics and performance.
           </p>
         </div>
       </div>

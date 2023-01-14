@@ -4,8 +4,8 @@ const DeveSection = () => {
   return (
     <div className="bg-black text-center py-[95px]">
       <div className="container mx-auto">
-        <p className="text-xs text-indigo-400 font-medium uppercase">for successful digital transformation</p>
-        <h3 className="text-white text-[48px] mt-1.5 font-PolySans font-normal mb-12">Why Develocity</h3>
+        <p className="text-xs text-indigo-400 uppercase">for successful digital transformation</p>
+        <h3 className="text-white text-[48px] mt-1.5 font-PolySans mb-12">Why Develocity</h3>
         <div className="grid px-4 text-left mt-10 gap-8 md:grid-cols-2 lg:grid-cols-3 md:px-0">
           <div className="bg-neutral-800/50 p-5 rounded-lg">
             <img src={DoubleArrowIcon} alt="double arrow" title="double arrow" />
