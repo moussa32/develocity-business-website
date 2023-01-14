@@ -25,7 +25,7 @@ const MetaverseSection = () => {
               </p>
             </div>
           </div>
-          <img src={MetaverseImage} alt="Metaverse" className="block mx-auto px-6" />
+          <img src={MetaverseImage} alt="Metaverse" className="block mx-auto px-11" />
           <div className="text-center py-8 gap-4 flex flex-col justify-evenly lg:text-left">
             <div>
               <h3 className="text-xl">Scalable</h3>
