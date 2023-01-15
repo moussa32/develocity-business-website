@@ -1,7 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
-import mainIcons from "../assets/main-icons.svg";
+import BloombergIcon from "../assets/Bloomberg.svg";
+import WiredIcon from "../assets/Wired.svg";
+import CoindeskIcons from "../assets/Coindesk.svg";
+import YahooFinanceIcons from "../assets/YahooFinance.svg";
 import SideMenu from "./SideMenu";
 import GradiantBackground from "../assets/images/GradientBackground.png";
 import { Fade } from "react-awesome-reveal";
@@ -32,10 +35,15 @@ const Empowering = () => {
               </button>
             </div>
           </div>
-        </Fade>
-        <Fade direction={"up"} triggerOnce={true}>
-          <img className="block my-14 md:my-16 md:mt-[152px] mx-auto px-2" src={`${mainIcons}`} />
-        </Fade>
+        </Fade>   
+        <div className="flex justify-evenly my-14 md:my-16 md:mt-[152px] mx-auto gap-1 md:gap-8">
+          <Fade direction={"up"} triggerOnce={true}>
+            <img className="w-[65px] md:w-[100%] opacity-30 hover:opacity-80" src={`${BloombergIcon}`} />
+            <img className="w-[65px] md:w-[100%] opacity-30 hover:opacity-80" src={`${WiredIcon}`} />
+            <img className="w-[65px] md:w-[100%] opacity-30 hover:opacity-80" src={`${CoindeskIcons}`} />
+            <img className="w-[55px] md:w-[100%] opacity-30 hover:opacity-80" src={`${YahooFinanceIcons}`} />  
+          </Fade>
+        </div>   
     </div>
   );
 };
