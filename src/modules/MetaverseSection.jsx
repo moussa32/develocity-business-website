@@ -26,10 +26,10 @@ const MetaverseSection = () => {
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Secure</h3>
                 <p className="mt-2 text-neutral-400 text-base">
-                  Mitigate hacker attacks with the Proof-of-Work security algorithm where the whole network validates each
-                  block generated, with the mining reward distributed among stakeholders.
+                  Mitigate hacker attacks with the Proof-of-Work security algorithm where the whole network validates
+                  each block generated, with the mining reward distributed among stakeholders.
                 </p>
-              </Fade>  
+              </Fade>
             </div>
           </div>
           <Fade direction={"up"} triggerOnce={true}>
@@ -134,7 +134,7 @@ const MetaverseSection = () => {
               Tell us about your future Metaverse project, and we will contact you within one business day.
             </p>
           </div>
-          <button className="bg-indigo-500 py-3.5 px-5 mx-auto lg:mx-0 lg:ml-auto rounded flex items-center gap-3">
+          <button className="bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3.5 px-5 mx-auto lg:mx-0 lg:ml-auto rounded flex items-center gap-3">
             Get a Quote <img src={GoArrowIcon} alt="go arrow" />
           </button>
         </Fade>
