@@ -18,7 +18,7 @@ const Empowering = () => {
         <div className="container grid grid-cols-2 mt-36 mx-auto z-20">
           <div className="w-[200%] md:w-[593px] z-20">
             <h2 className="md:text-6xl text-4xl text-center md:text-left font-bold mb-6">
-              Empowering the future of Finance
+              Empowering the Future of Finance
             </h2>
             <p className="text-base text-neutral-300 mb-8">
               Develocity is a full-service software development, mobile app, and data analytics company, providing

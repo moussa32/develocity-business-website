@@ -85,7 +85,7 @@ function WeWorkWith() {
                 <div className="pt-6 h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
                   <div className="pt- flex flex-col items-center">
                     <img className="mb-4" src={`${Solana}`} />
-                    <span className="text-xl">Polygon MATIC</span>
+                    <span className="text-xl">Solana</span>
                   </div>
                   <a href="https://Solana.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
                     https://Solana.com
