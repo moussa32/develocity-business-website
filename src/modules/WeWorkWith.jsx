@@ -30,10 +30,10 @@ function WeWorkWith() {
                     <img className="mb-4" src={`${Binance}`} />
                     <span className="text-xl">Binance</span>
                   </div>
-                  <p className="text-sm mx-3 hidden group-hover:flex">
+                  <a href="https://Binance.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
                     https://Binance.com
                     <img className="ml-5 pb-1" src={`${Arrow}`} />
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -49,10 +49,10 @@ function WeWorkWith() {
                     <img className="mb-4" src={`${Ethereum}`} />
                     <span className="text-xl">Ethereum</span>
                   </div>
-                  <p className="text-sm mx-3 hidden group-hover:flex">
+                  <a href="https://Ethereum.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
                     https://Ethereum.com
                     <img className="ml-5 pb-1" src={`${Arrow}`} />
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -68,22 +68,30 @@ function WeWorkWith() {
                     <img className="mb-4" src={`${Polygon}`} />
                     <span className="text-xl">Polygon MATIC</span>
                   </div>
-                  <p className="text-sm mx-3 hidden group-hover:flex">
+                  <a href="https://polygonscan.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
                     https://polygonscan.com
                     <img className="ml-5 pb-1" src={`${Arrow}`} />
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
           </Fade>
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="mb-4 relative flex justify-center group">
-              <div className="z-0 absolute h-16 w-20 -top-8">
+            <div className="mb-6 relative flex justify-center group">
+              <div className="z-0 absolute h-16 w-16 -top-7">
                 <img src={`${SolanaEllipse}`} />
               </div>
-              <div className="bg-neutral-700/25 backdrop-blur-lg group-hover:bg-gradient-to-b group-hover:from-[#312E81] group-hover:to-indigo-500 rounded-lg h-80 md:w-10/12 w-full flex flex-col justify-center items-center">
-                <img className="mb-4" src={`${Solana}`} />
-                <span className="text-xl">Solana</span>
+              <div className="bg-neutral-700/25 group-hover:bg-gradient-to-b group-hover:from-[#312E81] group-hover:to-indigo-500 backdrop-blur-lg z-10 rounded-lg h-80 md:w-10/12 w-full flex flex-col justify-center">
+                <div className="pt-6 h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
+                  <div className="pt- flex flex-col items-center">
+                    <img className="mb-4" src={`${Solana}`} />
+                    <span className="text-xl">Polygon MATIC</span>
+                  </div>
+                  <a href="https://Solana.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
+                    https://Solana.com
+                    <img className="ml-5 pb-1" src={`${Arrow}`} />
+                  </a>
+                </div>
               </div>
             </div>
           </Fade>
