@@ -3,12 +3,12 @@ import { Fade } from "react-awesome-reveal";
 const TechnologySection = () => {
   return (
     <section className="text-center mt-[191px] container mx-auto">
-      <Fade direction={"up"}>
+      <Fade direction={"up"} triggerOnce={true}>
         <span className="uppercase text-indigo-400 text-xs">TOP BLOCKCHAINS ARE AT YOUR DISPOSAL</span>
         <h2 className="text-4xl lg:text-6xl text-PolySans font-light mt-3">Technologies we work with</h2>
       </Fade>
       <div className="lg:text-left lg:flex-row items-center gap-y-6 flex flex-col border-b-2 border-neutral-800 pb-6 mt-14">
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <h3 className="lg:mr-[136px] text-xl lg:w-[280px]">Backend</h3>
           <div className="flex flex-wrap gap-y-2 gap-x-8 lg:gap-9 lg:justify-start justify-center">
             <span className="text-base text-[#a3a3a3] font-extralight">PHP7</span>
@@ -19,7 +19,7 @@ const TechnologySection = () => {
         </Fade>
       </div>
       <div className="lg:text-left lg:flex-row items-center gap-y-6 flex flex-col border-b-2 border-neutral-800 pb-6 mt-11">
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <h3 className="lg:mr-[136px] text-xl lg:w-[280px]">Frontend</h3>
           <div className="flex flex-wrap gap-y-2 gap-x-8 lg:gap-9 lg:justify-start justify-center">
             <span className="text-base text-[#a3a3a3] font-extralight">React</span>
@@ -32,7 +32,7 @@ const TechnologySection = () => {
         </Fade>
       </div>
       <div className="lg:text-left lg:flex-row items-center gap-y-6 flex flex-col border-b-2 border-neutral-800 pb-6 mt-11">
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <h3 className="lg:mr-[136px] text-xl lg:w-[280px]">iOS / Android</h3>
           <div className="flex flex-wrap gap-y-2 gap-x-8 lg:gap-9 lg:justify-start justify-center">
             <span className="text-base text-[#a3a3a3] font-extralight">Kotlin</span>
@@ -45,7 +45,7 @@ const TechnologySection = () => {
         </Fade>
       </div>
       <div className="lg:text-left lg:flex-row items-center gap-y-6 flex flex-col border-b-2 border-neutral-800 pb-6 mt-11">
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <h3 className="lg:mr-[136px] text-xl lg:w-[280px]">Analytics</h3>
           <div className="flex flex-wrap gap-y-2 gap-x-8 lg:gap-9 lg:justify-start justify-center">
             <span className="text-base text-[#a3a3a3] font-extralight">SRS</span>

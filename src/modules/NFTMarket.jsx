@@ -16,29 +16,29 @@ function NFTMarket() {
   return (
     <div className="text-center my-24">
       <div className="container mx-auto">
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <h1 className="ml-6 text-indigo-300 text-4xl md:text-7xl my-2.5">NFT and NFT Marketplace</h1>
         </Fade>
         <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col text-center md:text-left order-2 lg:order-1">
-            <Fade direction={"up"}>  
+            <Fade direction={"up"} triggerOnce={true}>  
               <p className="ml-6 text-xs text-indigo-500 capitalize mb-4">GET STARTED WITH NFT DEVELOPMENT</p>
               <h3 className="w-5/6 ml-6 text-white text-5xl mb-9">NFT Marketplace and Metaverse Development</h3>
             </Fade>
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <p className="ml-6 text-gray-400 text-base pb-7 w-5/6">
                 We have decades of experience in NFT development and can help you create a robust and secure marketplace
                 for NFTs. We also offer smart contract programming and audit services to ensure the security and
                 effectiveness of your NFTs.
               </p>
             </Fade>
-            <Fade direction={"up"}>  
+            <Fade direction={"up"} triggerOnce={true}>  
               <p className="ml-6 text-gray-400 text-base pb-7 w-5/6">
                 Offer your customers enhanced and seamless NFT minting, selling and buying on a secure NFT platform that
                 brings together global NFT creators and buyers at one place.
               </p>
             </Fade>
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <div className="grid px-4 gap-2 grid-cols-2">
                 {list.map((item, index) => (
                   <div className="flex" key={index}>
@@ -62,7 +62,7 @@ function NFTMarket() {
             </Fade>
           </div>
           <div className="order-1 lg:order-2 flex justify-center md:justify-start mb-20">
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <img src={`${NFT}`} />
             </Fade>
           </div>
