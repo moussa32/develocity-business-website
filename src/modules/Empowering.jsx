@@ -36,7 +36,7 @@ const Empowering = () => {
           </div>
         </Fade>
         <div className="flex justify-evenly my-14 md:my-16 md:mt-[152px] mx-auto gap-1 md:gap-8">
-          <Fade direction={"up"} triggerOnce={true}>
+          <Fade direction={"up"} triggerOnce={true} duration={2000} delay={1000}>
             <img className="w-[65px] md:w-[100%] opacity-30 hover:opacity-80" src={`${BloombergIcon}`} />
             <img className="w-[65px] md:w-[100%] opacity-30 hover:opacity-80" src={`${WiredIcon}`} />
             <img className="w-[65px] md:w-[100%] opacity-30 hover:opacity-80" src={`${CoindeskIcons}`} />
