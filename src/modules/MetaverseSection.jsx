@@ -8,13 +8,13 @@ const MetaverseSection = () => {
   return (
     <>
       <section>
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <h2 className="text-5xl md:text-6xl lg:text-7xl text-center text-indigo-300 mb-12">Metaverse Development</h2>
         </Fade>
         <div className="lg:grid lg:grid-cols-3">
           <div className="text-center py-8 gap-4 flex flex-col justify-evenly lg:text-right">
             <div>
-              <Fade direction={"up"}>
+              <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Interoperable</h3>
                 <p className="mt-2 text-neutral-400 text-base">
                   Automate and secure operations on the Metaverse by trusting us with the development of Metaverse smart
@@ -23,7 +23,7 @@ const MetaverseSection = () => {
               </Fade>
             </div>
             <div>
-              <Fade direction={"up"}>
+              <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Secure</h3>
                 <p className="mt-2 text-neutral-400 text-base">
                   Mitigate hacker attacks with the Proof-of-Work security algorithm where the whole network validates each
@@ -32,12 +32,12 @@ const MetaverseSection = () => {
               </Fade>  
             </div>
           </div>
-          <Fade direction={"up"}>
+          <Fade direction={"up"} triggerOnce={true}>
             <img src={MetaverseImage} alt="Metaverse" className="block mx-auto px-11" />
           </Fade>
           <div className="text-center py-8 gap-4 flex flex-col justify-evenly lg:text-left">
             <div>
-              <Fade direction={"up"}>
+              <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Scalable</h3>
                 <p className="mt-2 text-neutral-400 text-base">
                   Run cross-chain operations profitably with a modular framework that allows connecting dapps, services,
@@ -46,7 +46,7 @@ const MetaverseSection = () => {
               </Fade>
             </div>
             <div>
-              <Fade direction={"up"}>
+              <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Diverse</h3>
                 <p className="mt-2 text-neutral-400 text-base">
                   Be ahead of the Metaverse innovation! Introduce a new NFT product to the existing Metaverse or create
@@ -58,13 +58,13 @@ const MetaverseSection = () => {
         </div>
       </section>
       <section className="text-center mt-20 py-20">
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <span className="text-xs text-indigo-400 uppercase">FIND YOUR PERFECT APPLICATION</span>
           <h2 className="text-PolySans text-[48px] font-light">Multitude of Metaverse Use Cases</h2>
         </Fade>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-20 gap-x-22 mt-20">
           <div>
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
               <h3 className="text-xl">Art galleries</h3>
               <p className="mt-2 text-neutral-400 text-base">
@@ -74,7 +74,7 @@ const MetaverseSection = () => {
             </Fade>
           </div>
           <div>
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
               <h3 className="text-xl">Virtual land</h3>
               <p className="mt-2 text-neutral-400 text-base">
@@ -84,7 +84,7 @@ const MetaverseSection = () => {
             </Fade>
           </div>
           <div>
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
               <h3 className="text-xl">Education</h3>
               <p className="mt-2 text-neutral-400 text-base">
@@ -94,7 +94,7 @@ const MetaverseSection = () => {
             </Fade>
           </div>
           <div>
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
               <h3 className="text-xl">E-commerce</h3>
               <p className="mt-2 text-neutral-400 text-base">
@@ -104,7 +104,7 @@ const MetaverseSection = () => {
             </Fade>
           </div>
           <div>
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
               <h3 className="text-xl">Retail</h3>
               <p className="mt-2 text-neutral-400 text-base">
@@ -114,7 +114,7 @@ const MetaverseSection = () => {
             </Fade>
           </div>
           <div>
-            <Fade direction={"up"}>
+            <Fade direction={"up"} triggerOnce={true}>
               <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
               <h3 className="text-xl">Social media</h3>
               <p className="mt-2 text-neutral-400 text-base">
@@ -126,7 +126,7 @@ const MetaverseSection = () => {
         </div>
       </section>
       <section className="bg-neutral-900 p-11 flex flex-col lg:flex-row items-center max-w-[1020px] mx-auto rounded gap-10">
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <img src={EmptyCircal} alt="empty" />
           <div className="text-center lg:text-left">
             <h2 className="text-5xl">And there's more</h2>

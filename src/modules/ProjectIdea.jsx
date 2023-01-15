@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const ProjectIdea = () => {
   return (
     <div className="text-center mt-20 md:mt-44">
-      <Fade direction={"up"}>
+      <Fade direction={"up"} triggerOnce={true}>
         <span className="uppercase text-indigo-400 text-xs">For Successful Digital Transformation</span>
         <h2 className="text-5xl mt-2">Have a Project Idea?</h2>
         <p className="text-base text-neutral-400 md:w-2/4 mx-auto mt-6 mb-8">

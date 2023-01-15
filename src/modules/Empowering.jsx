@@ -16,7 +16,7 @@ const Empowering = () => {
           <SideMenu />
           <Navbar />
         </div>
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true} duration={2000}>
           <div className="container grid grid-cols-2 mt-36 mx-auto z-20">
             <div className="w-[200%] md:w-[593px] z-20">
               <h2 className="md:text-6xl text-4xl text-center md:text-left font-bold mb-6">
@@ -33,7 +33,7 @@ const Empowering = () => {
             </div>
           </div>
         </Fade>
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <img className="block my-14 md:my-16 md:mt-[152px] mx-auto px-2" src={`${mainIcons}`} />
         </Fade>
     </div>

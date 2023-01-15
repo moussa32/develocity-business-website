@@ -6,14 +6,14 @@ import { Fade } from "react-awesome-reveal";
 const FinTech = () => {
   return (
     <div className="mt-44">
-      <Fade direction={"up"}>
+      <Fade direction={"up"} triggerOnce={true}>
         <h2 className="text-indigo-300 text-7xl text-center">
           Fintech and Data Analytics
         </h2>
       </Fade>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-11 text-center md:text-left">
         <div className="lg:w-[592px] bg-opacity-5 bg-white rounded-[42px] p-10 mt-20 mx-5">
-          <Fade direction={"up"}>
+          <Fade direction={"up"} triggerOnce={true}>
             <img className="mx-auto" src={`${visaImg}`} />
             <h3 className="mt-12 text-xl font-medium">DeFi</h3>
             <p className="text-base text-neutral-400 mt-2">
@@ -36,7 +36,7 @@ const FinTech = () => {
           </Fade>
         </div>
         <div className="lg:w-[592px] bg-opacity-5 bg-white rounded-[42px] p-10 mt-20 mx-5">
-          <Fade direction={"up"}>
+          <Fade direction={"up"} triggerOnce={true}>
             <img className="mx-auto" src={`${cardImg}`} />
             <h3 className="mt-12 text-xl font-medium">Advanced analytics</h3>
             <p className="text-base text-neutral-400 mt-2">

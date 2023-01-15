@@ -14,12 +14,12 @@ function WeWorkWith() {
   return (
     <div className="bg-black text-center my-16">
       <div className="container mx-auto">
-        <Fade direction={"up"}>
+        <Fade direction={"up"} triggerOnce={true}>
           <p className="text-xs text-indigo-400 capitalize">TOP BLOCKCHAINS ARE AT YOUR DISPOSAL</p>
           <h3 className="text-white font-PolySans font-extralight text-6xl my-2.5">Blockchains we work with</h3>
         </Fade>
         <div className="grid px-4 text-left mt-28 gap-6 md:grid-cols-2 lg:grid-cols-4 md:px-0">
-          <Fade direction={"up"}>
+          <Fade direction={"up"} triggerOnce={true}>
             <div className="mb-6 relative flex justify-center group">
               <div className="z-0 absolute h-16 w-16 -top-7">
                 <img src={`${BinanceEllipse}`} />
@@ -38,7 +38,7 @@ function WeWorkWith() {
               </div>
             </div>
           </Fade>
-          <Fade direction={"up"}>
+          <Fade direction={"up"} triggerOnce={true}>
             <div className="mb-6 relative flex justify-center group">
               <div className="z-0 absolute h-16 w-16 -top-7">
                 <img src={`${EthereumEllipse}`} />
@@ -57,7 +57,7 @@ function WeWorkWith() {
               </div>
             </div>
           </Fade>
-          <Fade direction={"up"}>
+          <Fade direction={"up"} triggerOnce={true}>
             <div className="mb-6 relative flex justify-center group">
               <div className="z-0 absolute h-16 w-16 -top-7">
                 <img src={`${PoloygonEllipse}`} />
@@ -76,7 +76,7 @@ function WeWorkWith() {
               </div>
             </div>
           </Fade>
-          <Fade direction={"up"}>
+          <Fade direction={"up"} triggerOnce={true}>
             <div className="mb-4 relative flex justify-center group">
               <div className="z-0 absolute h-16 w-20 -top-8">
                 <img src={`${SolanaEllipse}`} />
