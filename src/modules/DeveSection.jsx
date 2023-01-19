@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 
 const DeveSection = () => {
   return (
-    <div className="bg-black text-center py-[95px]">    
+    <div className="bg-black text-center py-[95px]">
       <div className="container mx-auto">
         <Fade direction={"up"} triggerOnce={true}>
           <p className="text-xs text-indigo-400 uppercase">for successful digital transformation</p>
@@ -11,18 +11,18 @@ const DeveSection = () => {
         </Fade>
         <div className="grid px-4 text-left mt-10 gap-8 md:grid-cols-2 lg:grid-cols-3 md:px-0">
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="bg-neutral-800/50 p-5 rounded-lg">
+            <div className="bg-neutral-800/50 p-5 rounded-lg h-full">
               <img src={DoubleArrowIcon} alt="double arrow" title="double arrow" />
               <h4 className="text-white mt-8 text-xl font-medium">Full service cycle</h4>
               <p className="text-neutral-400 mt-2.5">
-                We can provide a full-service solution for your software development projects, from architecture design to
-                production deployment. Our professional teams handle challenges at any stage of the product development
-                cycle.
+                We can provide a full-service solution for your software development projects, from architecture design
+                to production deployment. Our professional teams handle challenges at any stage of the product
+                development cycle.
               </p>
             </div>
           </Fade>
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="bg-neutral-800/50 p-5 rounded-lg">
+            <div className="bg-neutral-800/50 p-5 rounded-lg h-full">
               <img src={DoubleArrowIcon} alt="double arrow" title="double arrow" />
               <h4 className="text-white mt-8 text-xl font-medium">Discovery phase</h4>
               <p className="text-neutral-400 mt-2.5">
@@ -33,13 +33,13 @@ const DeveSection = () => {
             </div>
           </Fade>
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="bg-neutral-800/50 p-5 rounded-lg">
+            <div className="bg-neutral-800/50 p-5 rounded-lg h-full">
               <img src={DoubleArrowIcon} alt="double arrow" title="double arrow" />
               <h4 className="text-white mt-8 text-xl font-medium">Quality-driven team</h4>
               <p className="text-neutral-400 mt-2.5">
-                We’re obsessed with quality development and strive for perfection. Our project and delivery managers align
-                the teams to the best practices in defect prevention to minimize the needed re-works and shorten the time
-                to launch.
+                We’re obsessed with quality development and strive for perfection. Our project and delivery managers
+                align the teams to the best practices in defect prevention to minimize the needed re-works and shorten
+                the time to launch.
               </p>
             </div>
           </Fade>
