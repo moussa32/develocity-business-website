@@ -24,6 +24,10 @@
   background-size: 700px;
 }
 
+.footer-bg {
+  background-image: url("./assets/footer-bg2.png");
+}
+
 .gradient-footer {
   background-image: url("./assets/GradientFooter.png");
 }

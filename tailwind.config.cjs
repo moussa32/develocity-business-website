@@ -29,9 +29,6 @@ module.exports = {
           '"Noto Color Emoji"',
         ],
       },
-      backgroundImage: {
-        "footer-bg": "url('./src/assets/footer-bg2.png')",
-      },
     },
   },
   plugins: [],

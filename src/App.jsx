@@ -26,7 +26,7 @@ const App = () => {
         <MetaverseSection />
         <FinTech />
       </div>
-      <div className="bg-footer-bg relative bg-center bg-no-repeat">
+      <div className="footer-bg relative bg-center bg-no-repeat">
         <img src={GradientFooter} className="opacity-70 md:opacity-50 absolute w-full h-full bottom-0" />
         <TechnologySection />
         <ProjectIdea />
