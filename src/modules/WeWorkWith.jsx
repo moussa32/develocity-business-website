@@ -9,6 +9,11 @@ import Ethereum from "../assets/Ethereum.png";
 import Polygon from "../assets/Polygon.png";
 import Solana from "../assets/Solana.png";
 import { Fade } from "react-awesome-reveal";
+import SolanaColorVersion from "../assets/SolanaColorVersion.svg";
+import PolygonColorVersion from "../assets/PolygonColorVersion.svg";
+import EthereumColorVersion from "../assets/EthereumColorVersion.svg";
+import BinanceColorVersion from "../assets/BinanceColorVersion.svg";
+import BlockchainesCard from "./BlockchainesCard";
 
 function WeWorkWith() {
   return (
@@ -20,80 +25,40 @@ function WeWorkWith() {
         </Fade>
         <div className="grid px-4 text-left mt-28 gap-6 md:grid-cols-2 lg:grid-cols-4 md:px-0">
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="mb-6 relative flex justify-center group">
-              <div className="z-0 absolute h-16 w-16 -top-7">
-                <img src={`${BinanceEllipse}`} />
-              </div>
-              <div className="bg-neutral-700/25 group-hover:bg-gradient-to-b group-hover:from-[#312E81] group-hover:to-indigo-500 backdrop-blur-lg z-10 rounded-lg h-80 md:w-10/12 w-full flex flex-col justify-center">
-                <div className="pt-6 h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
-                  <div className="pt- flex flex-col items-center">
-                    <img className="mb-4" src={`${Binance}`} />
-                    <span className="text-xl">Binance</span>
-                  </div>
-                  <a href="https://Binance.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
-                    https://Binance.com
-                    <img className="ml-5 pb-1" src={`${Arrow}`} />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <BlockchainesCard
+              url="https://Binance.com"
+              title="Binance"
+              backgroundCrucial={BinanceEllipse}
+              img={Binance}
+              activeImg={BinanceColorVersion}
+            />
           </Fade>
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="mb-6 relative flex justify-center group">
-              <div className="z-0 absolute h-16 w-16 -top-7">
-                <img src={`${EthereumEllipse}`} />
-              </div>
-              <div className="bg-neutral-700/25 group-hover:bg-gradient-to-b group-hover:from-[#312E81] group-hover:to-indigo-500 backdrop-blur-lg z-10 rounded-lg h-80 md:w-10/12 w-full flex flex-col justify-center">
-                <div className="pt-6 h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
-                  <div className="pt- flex flex-col items-center">
-                    <img className="mb-4" src={`${Ethereum}`} />
-                    <span className="text-xl">Ethereum</span>
-                  </div>
-                  <a href="https://Ethereum.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
-                    https://Ethereum.com
-                    <img className="ml-5 pb-1" src={`${Arrow}`} />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <BlockchainesCard
+              url="https://Ethereum.com"
+              title="Ethereum"
+              backgroundCrucial={EthereumEllipse}
+              img={Ethereum}
+              activeImg={EthereumColorVersion}
+            />
           </Fade>
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="mb-6 relative flex justify-center group">
-              <div className="z-0 absolute h-16 w-16 -top-7">
-                <img src={`${PoloygonEllipse}`} />
-              </div>
-              <div className="bg-neutral-700/25 group-hover:bg-gradient-to-b group-hover:from-[#312E81] group-hover:to-indigo-500 backdrop-blur-lg z-10 rounded-lg h-80 md:w-10/12 w-full flex flex-col justify-center">
-                <div className="pt-6 h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
-                  <div className="pt- flex flex-col items-center">
-                    <img className="mb-4" src={`${Polygon}`} />
-                    <span className="text-xl">Polygon MATIC</span>
-                  </div>
-                  <a href="https://polygonscan.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
-                    https://polygonscan.com
-                    <img className="ml-5 pb-1" src={`${Arrow}`} />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <BlockchainesCard
+              url="https://polygonscan.com"
+              title="Polygon MATIC"
+              backgroundCrucial={PoloygonEllipse}
+              img={Polygon}
+              activeImg={PolygonColorVersion}
+            />
           </Fade>
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="mb-6 relative flex justify-center group">
-              <div className="z-0 absolute h-16 w-16 -top-7">
-                <img src={`${SolanaEllipse}`} />
-              </div>
-              <div className="bg-neutral-700/25 group-hover:bg-gradient-to-b group-hover:from-[#312E81] group-hover:to-indigo-500 backdrop-blur-lg z-10 rounded-lg h-80 md:w-10/12 w-full flex flex-col justify-center">
-                <div className="pt-6 h-full md:h-4/6 flex flex-col justify-between items-center mt-14 pb-8 md:pb-0">
-                  <div className="pt- flex flex-col items-center">
-                    <img className="mb-4" src={`${Solana}`} />
-                    <span className="text-xl">Solana</span>
-                  </div>
-                  <a href="https://Solana.com" target="_blank" className="text-sm mx-3 hidden group-hover:flex">
-                    https://Solana.com
-                    <img className="ml-5 pb-1" src={`${Arrow}`} />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <BlockchainesCard
+              url="https://Solana.com"
+              backgroundCrucial={SolanaEllipse}
+              title="Solana"
+              img={Solana}
+              activeImg={SolanaColorVersion}
+            />
           </Fade>
         </div>
       </div>

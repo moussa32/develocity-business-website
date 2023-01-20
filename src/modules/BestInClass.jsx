@@ -37,25 +37,25 @@ function BestInClass() {
             <div className="grid px-4 gap-6 grid-cols-2">
               <Fade direction={"up"} triggerOnce={true}>
                 <div className="flex flex-col border-l-2 border-indigo-500 mb-2">
-                  <label className="ml-6 py-2 text-5xl">10</label>
+                  <label className="ml-6 py-2 text-5xl PolySans font-medium">10</label>
                   <span className="ml-6 py-2 text-lg">Year in Business</span>
                 </div>
               </Fade>
               <Fade direction={"up"} triggerOnce={true}>
                 <div className="flex flex-col border-l-2 border-indigo-500 mb-2">
-                  <label className="ml-6 py-2 text-5xl">10</label>
+                  <label className="ml-6 py-2 text-5xl PolySans font-medium">10</label>
                   <span className="ml-6 py-2 text-lg">Clients Worked With</span>
                 </div>
               </Fade>
               <Fade direction={"up"} triggerOnce={true}>
                 <div className="flex flex-col border-l-2 border-indigo-500 mb-2">
-                  <label className="ml-6 py-2 text-5xl">257</label>
+                  <label className="ml-6 py-2 text-5xl PolySans font-medium">257</label>
                   <span className="ml-6 py-2 text-lg">Projects Delivered</span>
                 </div>
               </Fade>
               <Fade direction={"up"} triggerOnce={true}>
                 <div className="flex flex-col border-l-2 border-indigo-500 mb-2">
-                  <label className="ml-6 py-2 text-5xl">8</label>
+                  <label className="ml-6 py-2 text-5xl PolySans font-medium">8</label>
                   <span className="ml-6 py-2 text-lg">Countries Worldwide</span>
                 </div>
               </Fade>

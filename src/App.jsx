@@ -10,6 +10,7 @@ import ProjectIdea from "./modules/ProjectIdea";
 import Footer from "./modules/Footer";
 import TechnologySection from "./modules/TechnologySection";
 import FinTech from "./modules/FinTech";
+import GradientFooter from "./assets/GradientFooter.png";
 
 const App = () => {
   return (
@@ -23,9 +24,10 @@ const App = () => {
         <NFTMarket />
         <NFTGameDev />
         <MetaverseSection />
-        <FinTech/>
+        <FinTech />
       </div>
-      <div className="bg-footer-bg bg-center bg-no-repeat">
+      <div className="bg-footer-bg relative bg-center bg-no-repeat">
+        <img src={GradientFooter} className="opacity-70 md:opacity-50 absolute w-full h-full bottom-0" />
         <TechnologySection />
         <ProjectIdea />
         <Footer />

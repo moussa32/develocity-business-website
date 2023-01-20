@@ -1,0 +1,18 @@
+<svg id="Solana_SOL_" data-name="Solana (SOL)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.907" y1="-3.499" x2="0.355" y2="1.923" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ffa3"/>
+      <stop offset="1" stop-color="#dc1fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.666" y1="-1.129" x2="0.114" y2="4.293" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.786" y1="-2.307" x2="0.234" y2="3.115" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Solana_SOL_2" data-name="Solana (SOL)">
+    <circle id="Solana_SOL_3" data-name="Solana (SOL)" cx="60" cy="60" r="60"/>
+    <g id="Solana_SOL_4" data-name="Solana (SOL)" transform="translate(26 33)">
+      <path id="Solana_SOL_5" data-name="Solana (SOL)" d="M11.2.658A2.254,2.254,0,0,1,12.789,0H67.776a1.126,1.126,0,0,1,.8,1.923L57.711,12.785a2.254,2.254,0,0,1-1.594.658H1.13a1.126,1.126,0,0,1-.8-1.923Z" transform="translate(0 40.556)" fill="url(#linear-gradient)"/>
+      <path id="Solana_SOL_6" data-name="Solana (SOL)" d="M11.2.658A2.317,2.317,0,0,1,12.789,0H67.776a1.126,1.126,0,0,1,.8,1.923L57.711,12.785a2.254,2.254,0,0,1-1.594.658H1.13a1.126,1.126,0,0,1-.8-1.923Z" fill="url(#linear-gradient-2)"/>
+      <path id="Solana_SOL_7" data-name="Solana (SOL)" d="M57.711.658A2.254,2.254,0,0,0,56.117,0H1.13a1.126,1.126,0,0,0-.8,1.923L11.2,12.785a2.254,2.254,0,0,0,1.594.658H67.776a1.126,1.126,0,0,0,.8-1.923Z" transform="translate(0 20.148)" fill="url(#linear-gradient-3)"/>
+    </g>
+  </g>
+</svg>
