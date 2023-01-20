@@ -10,10 +10,18 @@ const Navbar = () => {
           className="w-[300px] md:w-[403px] hidden mt-3 h-[53px] bg-opacity-5 bg-white text-neutral-300 text-base
         rounded-[20px] md:flex md:mt-0 justify-evenly items-center backdrop-blur-md translate-x-2/4 xl:ml-[271px]"
         >
-          <a className="hover:bg-opacity-0">Home</a>
-          <a>Company</a>
-          <a>Services</a>
-          <a>Contact</a>
+          <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
+            Home
+          </a>
+          <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
+            Company
+          </a>
+          <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
+            Services
+          </a>
+          <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
+            Contact
+          </a>
         </div>
       </div>
     </nav>
