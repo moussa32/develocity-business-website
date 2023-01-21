@@ -146,7 +146,7 @@ const QuoteModal = () => {
                       </label>
                     </div>
                   </form>
-                  <CompeleteInquiry handleClick = {() => closeModal} />
+                  <CompeleteInquiry handleClick = {() => closeModal()} />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
