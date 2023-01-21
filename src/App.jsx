@@ -11,11 +11,31 @@ import Footer from "./modules/Footer";
 import TechnologySection from "./modules/TechnologySection";
 import FinTech from "./modules/FinTech";
 import GradientFooter from "./assets/GradientFooter.png";
+import { useCallback, useState } from "react";
 
 const App = () => {
+  const [step, setStep] = useState("howItWork");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleCloseModal = useCallback(() => {
+    //When modal is closed it should reset the step
+    setStep("howItWork");
+    setIsOpen(false);
+  }, []);
+
+  const handleOpenModal = useCallback(() => {
+    setIsOpen(true);
+  }, []);
+
   return (
     <div className="bg-[rgba(7,7,7)] text-whiteText text-neutral-50">
-      <Empowering />
+      <Empowering
+        isOpen={isOpen}
+        onOpenModal={handleOpenModal}
+        onCloseModal={handleCloseModal}
+        currentModal={step}
+        handleCurrentModal={setStep}
+      />
       <div className="container mx-auto">
         <DeveSection />
         <BestInClass />

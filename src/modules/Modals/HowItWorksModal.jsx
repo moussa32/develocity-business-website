@@ -1,28 +1,15 @@
-import React from "react";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import GoArrowIcon from "../assets/images/GoArrowIcon.png";
-import DoubleArrowIcon from "../assets/images/DoubleArrowIcon.svg";
-import CompeleteInquiry from "./CompeleteInquiry";
+import { ReactComponent as HowItWorksSvg } from "../../assets/HowItWorks.svg";
+import GoArrowIcon from "../../assets/images/GoArrowIcon.png";
 
-const QuoteModal = () => {
-  const [open, setOpen] = useState(false);
-
+const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
   const cancelButtonRef = useRef(null);
-  const closeModal = () => {
-    setOpen(false);
-  };
+
   return (
     <>
-      <button
-        className="bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 mb-20"
-        onClick={() => setOpen(true)}
-      >
-        Get a Free Quote
-        <img className="inline pl-2" src={`${GoArrowIcon}`} alt="Go arrow" />
-      </button>
-      <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-40" initialFocus={cancelButtonRef} onClose={setOpen}>
+      <Transition.Root show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-40" initialFocus={cancelButtonRef} onClose={onCloseModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -48,7 +35,8 @@ const QuoteModal = () => {
               >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 w-[800px]">
                   <h1 className="text-center text-5xl text-[#171717] font-semibold mt-10">How it works?</h1>
-                  <div className="flex flex-col md:flex-row justify-around mt-12 text-center">
+                  <HowItWorksSvg className="w-full px-4 center mx-auto my-6" />
+                  {/* <div className="flex flex-col md:flex-row justify-around mt-12 text-center">
                     <div>
                       <img className="mt-3 md:mt-0 mx-auto" src={DoubleArrowIcon} alt="DoubleArrowIcon" />
                       <p className="px-16 text-base font-medium text-[#404040] mt-3">Tell us about your needs</p>
@@ -61,51 +49,67 @@ const QuoteModal = () => {
                       <img className="mt-3 md:mt-0 mx-auto" src={DoubleArrowIcon} alt="DoubleArrowIcon" />
                       <p className="px-16 text-base font-medium text-[#404040] mt-3">You‘ll get a free quote from us</p>
                     </div>
-                  </div>
+                  </div> */}
                   <form className="px-5 mt-16">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                       <div className="mx-auto">
-                        <label className="block text-sm text-[#737373] font-medium ml-2 mb-2">Name *</label>
+                        <label className="block text-sm text-neutral-500 font-medium ml-2 mb-2">Name *</label>
                         <input
-                          className="border border-[#6466E9] rounded h-14 md:w-[312px]"
+                          className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded md:w-[312px] p-4 focus:border-indigo-500"
                           type="text"
                           name="first-name"
                         />
                       </div>
                       <div className="mx-auto mt-7 md:mt-0">
-                        <label className="block text-sm text-[#737373] font-medium ml-2 mb-2">Last Name *</label>
+                        <label className="block text-sm text-neutral-500 font-medium ml-2 mb-2">Last Name *</label>
                         <input
-                          className="border border-[#6466E9] rounded h-14 md:w-[312px]"
+                          className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded md:w-[312px] p-4 focus:border-indigo-500"
                           type="text"
                           name="last-name"
                         />
                       </div>
                       <div className="mx-auto mt-7">
-                        <label className="block text-sm text-[#737373] font-medium ml-2 mb-2">Email *</label>
-                        <input className="border border-[#6466E9] rounded h-14 md:w-[312px]" type="text" name="email" />
+                        <label className="block text-sm text-neutral-500 font-medium ml-2 mb-2">Email *</label>
+                        <input
+                          className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded md:w-[312px] p-4 focus:border-indigo-500"
+                          type="text"
+                          name="email"
+                        />
                       </div>
                       <div className="mx-auto mt-7">
-                        <label className="block text-sm text-[#737373] font-medium ml-2 mb-2">Company *</label>
+                        <label className="block text-sm text-neutral-500 font-medium ml-2 mb-2">Company *</label>
                         <input
-                          className="border border-[#6466E9] rounded h-14 md:w-[312px]"
+                          className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded md:w-[312px] p-4 focus:border-indigo-500"
                           type="text"
                           name="company"
                         />
                       </div>
                     </div>
                     <div className="mx-auto mt-7 w-[250px] md:w-[695px]">
-                      <label className="block text-sm text-[#737373] font-medium ml-2 mb-2">About your project *</label>
+                      <label className="block text-sm text-neutral-500 font-medium ml-2 mb-2">
+                        About your project *
+                      </label>
                       <textarea
-                        className="border border-[#6466E9] rounded h-44 w-[250px] md:w-[695px]"
+                        className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded p-4 focus:border-indigo-500 h-44 w-[250px] md:w-[695px]"
                         name="about-project"
                       />
                     </div>
-                    <div className="ml-2 md:ml-8">
-                      <input name="NDA-checkbox" type="checkbox" />
-                      <label className="text-sm font-medium text-[#404040] ml-2">I require NDA</label>
+                    <div className="mx-auto flex items-center mt-3 md:ml-8">
+                      <input
+                        name="NDA-checkbox"
+                        type="checkbox"
+                        className="w-[18px] h-[18px] border-neutral-300 outline-none shadow-none"
+                      />
+                      <label className="text-sm font-medium text-neutral-700 ml-2">I require NDA</label>
                     </div>
                   </form>
-                  <CompeleteInquiry handleClick={() => closeModal()} />
+                  <button
+                    onClick={() => handleCurrentModal("success")}
+                    className="text-white ml-14 bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 rounded-sm mt-8 mb-10"
+                  >
+                    Send Inquiry
+                    <img className="inline pl-2" src={`${GoArrowIcon}`} alt="Go arrow" />
+                  </button>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
@@ -116,4 +120,4 @@ const QuoteModal = () => {
   );
 };
 
-export default QuoteModal;
+export default HowItWorksModal;

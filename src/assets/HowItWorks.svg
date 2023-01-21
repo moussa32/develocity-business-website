@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="576" height="126" viewBox="0 0 576 126">
+  <g id="Group_4707" data-name="Group 4707" transform="translate(-432 -241)">
+    <text id="Tell_us_about_your_needs" data-name="Tell us about your needs" transform="translate(432 325)" fill="#404040" font-size="16" font-family="Inter" font-weight="500"><tspan x="8.642" y="16">Tell us about </tspan><tspan x="15.642" y="38">your needs</tspan></text>
+    <text id="We_ll_discuss_the_project" data-name="We‘ll discuss the project" transform="translate(645 325)" fill="#404040" font-size="16" font-family="Inter" font-weight="500"><tspan x="15" y="16">We‘ll discuss the </tspan><tspan x="45" y="38">project</tspan></text>
+    <text id="You_ll_get_a_free_quote_from_us" data-name="You‘ll get a free quote from us" transform="translate(888 325)" fill="#404040" font-size="16" font-family="Inter" font-weight="500"><tspan x="5" y="16">You‘ll get a free </tspan><tspan x="8" y="38">quote from us</tspan></text>
+    <circle id="Ellipse_354" data-name="Ellipse 354" cx="36" cy="36" r="36" transform="translate(456 241)" fill="#6366f1" opacity="0.2"/>
+    <circle id="Ellipse_372" data-name="Ellipse 372" cx="36" cy="36" r="36" transform="translate(684 241)" fill="#6366f1" opacity="0.2"/>
+    <circle id="Ellipse_374" data-name="Ellipse 374" cx="36" cy="36" r="36" transform="translate(912 241)" fill="#6366f1" opacity="0.2"/>
+    <circle id="Ellipse_355" data-name="Ellipse 355" cx="26" cy="26" r="26" transform="translate(466 251)" fill="#6366f1"/>
+    <circle id="Ellipse_373" data-name="Ellipse 373" cx="26" cy="26" r="26" transform="translate(694 251)" fill="#6366f1"/>
+    <circle id="Ellipse_375" data-name="Ellipse 375" cx="26" cy="26" r="26" transform="translate(922 251)" fill="#6366f1"/>
+    <path id="Path_17860" data-name="Path 17860" d="M616.539,262.154V240m0,0L611,245.538M616.539,240l5.538,5.538m8.308,16.615V246.923m0,0-5.538,5.538m5.538-5.538,5.538,5.538" transform="translate(-131.462 25.923)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_18024" data-name="Path 18024" d="M616.539,262.154V240m0,0L611,245.538M616.539,240l5.538,5.538m8.308,16.615V246.923m0,0-5.538,5.538m5.538-5.538,5.538,5.538" transform="translate(96.538 25.923)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_18025" data-name="Path 18025" d="M616.539,262.154V240m0,0L611,245.538M616.539,240l5.538,5.538m8.308,16.615V246.923m0,0-5.538,5.538m5.538-5.538,5.538,5.538" transform="translate(324.538 25.923)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_97" data-name="Line 97" x2="116" transform="translate(548.5 277.5)" fill="none" stroke="#a3a3a3" stroke-linecap="round" stroke-width="5" stroke-dasharray="0 16"/>
+    <line id="Line_98" data-name="Line 98" x2="116" transform="translate(776.5 277.5)" fill="none" stroke="#a3a3a3" stroke-linecap="round" stroke-width="5" stroke-dasharray="0 16"/>
+  </g>
+</svg>

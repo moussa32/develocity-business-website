@@ -6,10 +6,12 @@ import CoindeskIcons from "../assets/Coindesk.svg";
 import YahooFinanceIcons from "../assets/YahooFinance.svg";
 import SideMenu from "./SideMenu";
 import GradiantBackground from "../assets/images/GradientBackground.png";
+import GoArrowIcon from "../assets/images/GoArrowIcon.png";
+import HowItWorksModal from "./Modals/HowItWorksModal";
+import SuccessModal from "./Modals/SuccessModal";
 import { Fade } from "react-awesome-reveal";
-import QuoteModal from "./QuoteModal";
 
-const Empowering = () => {
+const Empowering = ({ isOpen, onOpenModal, onCloseModal, currentModal, handleCurrentModal }) => {
   return (
     <div className="relative main-bg bg-center bg-no-repeat text-center overflow-hidden w-full md:bg-cover md:bg-right md:text-left md:h-[810px]">
       <img src={GradiantBackground} className="absolute h-full w-full z-0" />
@@ -18,8 +20,8 @@ const Empowering = () => {
         <Navbar />
       </div>
       <Fade direction={"up"} triggerOnce={true} duration={2000}>
-        <div className="container grid grid-cols-2 mt-36 mx-auto z-20">
-          <div className="w-[200%] md:w-[593px] z-20">
+        <div className="container grid grid-cols-2 mt-36 lg:mt-[230px] mx-auto z-20">
+          <div className="lg:pl-10 w-[200%] md:w-[593px] z-20">
             <h2 className="md:text-6xl text-4xl text-center md:text-left font-bold mb-6">
               Empowering the Future of Finance
             </h2>
@@ -27,8 +29,17 @@ const Empowering = () => {
               Develocity is a full-service software development, mobile app, and data analytics company, providing
               cutting-edge web 3 and blockchain solutions to businesses of all sizes.
             </p>
-           
-            <QuoteModal/>
+            <button
+              className="bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 mb-20"
+              onClick={onOpenModal}
+            >
+              Get a Free Quote
+              <img className="inline pl-2" src={`${GoArrowIcon}`} alt="Go arrow" />
+            </button>
+            {currentModal === "howItWork" && (
+              <HowItWorksModal isOpen={isOpen} onCloseModal={onCloseModal} handleCurrentModal={handleCurrentModal} />
+            )}
+            {currentModal === "success" && <SuccessModal isOpen={isOpen} onCloseModal={onCloseModal} />}
           </div>
         </div>
       </Fade>
