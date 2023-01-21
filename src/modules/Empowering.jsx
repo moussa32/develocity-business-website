@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import GoArrowIcon from "../assets/images/GoArrowIcon.png";
 import BloombergIcon from "../assets/Bloomberg.svg";
 import WiredIcon from "../assets/Wired.svg";
 import CoindeskIcons from "../assets/Coindesk.svg";
@@ -8,6 +7,7 @@ import YahooFinanceIcons from "../assets/YahooFinance.svg";
 import SideMenu from "./SideMenu";
 import GradiantBackground from "../assets/images/GradientBackground.png";
 import { Fade } from "react-awesome-reveal";
+import QuoteModal from "./QuoteModal";
 
 const Empowering = () => {
   return (
@@ -27,10 +27,8 @@ const Empowering = () => {
               Develocity is a full-service software development, mobile app, and data analytics company, providing
               cutting-edge web 3 and blockchain solutions to businesses of all sizes.
             </p>
-            <button className="bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4">
-              Get a Free Quote
-              <img className="inline pl-2" src={`${GoArrowIcon}`} alt="Go arrow" />
-            </button>
+           
+            <QuoteModal/>
           </div>
         </div>
       </Fade>
