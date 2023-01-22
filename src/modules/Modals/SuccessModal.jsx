@@ -1,12 +1,18 @@
 import { Fragment, useRef } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { Fade } from "react-awesome-reveal";
 
 const SuccessModal = ({ isOpen, onCloseModal }) => {
   const cancelBtnRef = useRef(null);
 
   return (
     <Transition.Root show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-40 shadow-xl" initialFocus={cancelBtnRef} onClose={onCloseModal}>
+      <Dialog
+        as="div"
+        className="relative z-40 shadow-xl"
+        initialFocus={cancelBtnRef}
+        onClose={onCloseModal}
+      >
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -30,14 +36,19 @@ const SuccessModal = ({ isOpen, onCloseModal }) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 h-[250px] md:h-[420px] w-[800px]">
-                <h1 className="font-PolySans text-center text-2xl md:text-4xl md:text-[48px] text-indigo-500 font-semibold mt-20 md:mt-40 mb-3 md:mb-6">
-                  Thank you for your inquiry!
-                </h1>
-                <p className="text-center px-14 text-neutral-700 text-lg">
-                  We’ll review your message and will get back to you shortly.
-                </p>
-              </Dialog.Panel>
+              <div>
+                <Fade direction={"up"} triggerOnce={true}>
+                  <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 h-[250px] md:h-[420px] w-[800px]">
+                    <h1 className="font-PolySans text-center text-2xl md:text-4xl md:text-[48px] text-indigo-500 font-semibold mt-20 md:mt-40 mb-3 md:mb-6">
+                      Thank you for your inquiry!
+                    </h1>
+                    <p className="text-center px-10 text-neutral-700 text-lg">
+                      We’ll review your message and will get back to you
+                      shortly.
+                    </p>
+                  </Dialog.Panel>
+                </Fade>
+              </div>
             </Transition.Child>
           </div>
         </div>
