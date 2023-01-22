@@ -91,7 +91,7 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                           About your project *
                         </label>
                         <textarea
-                          className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded p-4 focus:border-indigo-500 md:h-44 w-[275px] md:w-[695px]"
+                          className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded p-4 focus:border-indigo-500 md:h-44 w-[280px] md:w-[695px]"
                           name="about-project"
                         />
                       </div>

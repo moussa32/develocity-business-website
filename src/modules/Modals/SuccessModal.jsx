@@ -34,7 +34,7 @@ const SuccessModal = ({ isOpen, onCloseModal }) => {
                 <h1 className="font-PolySans text-center text-2xl md:text-4xl md:text-[48px] text-indigo-500 font-semibold mt-20 md:mt-40 mb-3 md:mb-6">
                   Thank you for your inquiry!
                 </h1>
-                <p className="text-center px-5 text-neutral-700 text-lg">
+                <p className="text-center px-14 text-neutral-700 text-lg">
                   We’ll review your message and will get back to you shortly.
                 </p>
               </Dialog.Panel>
