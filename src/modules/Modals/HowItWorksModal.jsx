@@ -85,31 +85,34 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                         />
                       </div>
                     </div>
-                    <div className="mx-auto mt-7 w-[250px] md:w-[695px]">
-                      <label className="block text-sm text-neutral-500 font-medium ml-2 mb-2">
-                        About your project *
-                      </label>
-                      <textarea
-                        className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded p-4 focus:border-indigo-500 h-44 w-[250px] md:w-[695px]"
-                        name="about-project"
-                      />
-                    </div>
-                    <div className="mx-auto flex items-center mt-3 md:ml-8">
-                      <input
-                        name="NDA-checkbox"
-                        type="checkbox"
-                        className="w-[18px] h-[18px] border-neutral-300 outline-none shadow-none"
-                      />
-                      <label className="text-sm font-medium text-neutral-700 ml-2">I require NDA</label>
+                    <div className="mx-auto grid grid-cols-1">
+                      <div className="mx-auto mt-7 md:w-[695px]">
+                        <label className="block text-sm text-neutral-500 font-medium ml-2 mb-2">
+                          About your project *
+                        </label>
+                        <textarea
+                          className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded p-4 focus:border-indigo-500 md:h-44 w-[280px] md:w-[695px]"
+                          name="about-project"
+                        />
+                      </div>
+                      <div className="flex items-center mt-3 md:ml-8">
+                        <input
+                          name="NDA-checkbox"
+                          type="checkbox"
+                          className="w-[18px] h-[18px] border-neutral-300 outline-none shadow-none"
+                        />
+                        <label className="text-sm font-medium text-neutral-700 ml-2">I require NDA</label>
+                      </div>
+                      <button
+                        onClick={() => handleCurrentModal("success")}
+                        className="mx-auto md:mx-0 md:ml-8 w-[164px] text-white bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 rounded-sm mt-8 mb-10"
+                      >
+                        Send Inquiry
+                        <img className="inline pl-2" src={`${GoArrowIcon}`} alt="Go arrow" />
+                      </button>
                     </div>
                   </form>
-                  <button
-                    onClick={() => handleCurrentModal("success")}
-                    className="text-white ml-14 bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 rounded-sm mt-8 mb-10"
-                  >
-                    Send Inquiry
-                    <img className="inline pl-2" src={`${GoArrowIcon}`} alt="Go arrow" />
-                  </button>
+                  
                 </Dialog.Panel>
               </Transition.Child>
             </div>
