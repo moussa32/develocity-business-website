@@ -38,7 +38,7 @@ const SuccessModal = ({ isOpen, onCloseModal }) => {
             >
               <div>
                 <Fade direction={"up"} triggerOnce={true}>
-                  <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 h-[250px] md:h-[420px] w-[800px]">
+                  <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 h-[250px] md:h-[420px] md:w-[800px]">
                     <h1 className="font-PolySans text-center text-2xl md:text-4xl md:text-[48px] text-indigo-500 font-semibold mt-20 md:mt-40 mb-3 md:mb-6">
                       Thank you for your inquiry!
                     </h1>
