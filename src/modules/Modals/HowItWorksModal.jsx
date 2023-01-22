@@ -90,22 +90,22 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                         About your project *
                       </label>
                       <textarea
-                        className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded p-4 focus:border-indigo-500 md:h-44 w-[250px] md:w-[695px]"
+                        className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded p-4 focus:border-indigo-500 md:h-44 w-[258px] md:w-[695px]"
                         name="about-project"
                       />
                     </div>
-                    <div className="mx-auto flex items-center mt-3 md:ml-8">
+                    <div className="mx-auto flex items-center mt-3 ml-9 md:ml-8">
                       <input
                         name="NDA-checkbox"
                         type="checkbox"
-                        className="ml-10 md:ml-0 w-[18px] h-[18px] border-neutral-300 outline-none shadow-none"
+                        className="w-[18px] h-[18px] border-neutral-300 outline-none shadow-none"
                       />
                       <label className="text-sm font-medium text-neutral-700 ml-2">I require NDA</label>
                     </div>
                   </form>
                   <button
                     onClick={() => handleCurrentModal("success")}
-                    className="text-white ml-24 md:ml-14 bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 rounded-sm mt-8 mb-10"
+                    className="text-white ml-20 md:ml-14 bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 rounded-sm mt-8 mb-10"
                   >
                     Send Inquiry
                     <img className="inline pl-2" src={`${GoArrowIcon}`} alt="Go arrow" />
