@@ -4,7 +4,7 @@ import EmptyCircal from "../assets/images/EmptyCircal.png";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
 import { Fade } from "react-awesome-reveal";
 
-const MetaverseSection = () => {
+const MetaverseSection = ({ onOpenModal }) => {
   return (
     <>
       <section>
@@ -134,7 +134,10 @@ const MetaverseSection = () => {
               Tell us about your future Metaverse project, and we will contact you within one business day.
             </p>
           </div>
-          <button className="bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3.5 px-5 mx-auto lg:mx-0 lg:ml-auto rounded flex items-center gap-3">
+          <button
+            onClick={onOpenModal}
+            className="bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3.5 px-5 mx-auto lg:mx-0 lg:ml-auto rounded flex items-center gap-3"
+          >
             Get a Quote <img src={GoArrowIcon} alt="go arrow" />
           </button>
         </Fade>

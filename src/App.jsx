@@ -12,6 +12,8 @@ import TechnologySection from "./modules/TechnologySection";
 import FinTech from "./modules/FinTech";
 import GradientFooter from "./assets/GradientFooter.png";
 import { useCallback, useState } from "react";
+import HowItWorksModal from "./modules/Modals/HowItWorksModal";
+import SuccessModal from "./modules/Modals/SuccessModal";
 
 const App = () => {
   const [step, setStep] = useState("howItWork");
@@ -29,13 +31,7 @@ const App = () => {
 
   return (
     <div className="bg-[rgba(7,7,7)] text-whiteText text-neutral-50">
-      <Empowering
-        isOpen={isOpen}
-        onOpenModal={handleOpenModal}
-        onCloseModal={handleCloseModal}
-        currentModal={step}
-        handleCurrentModal={setStep}
-      />
+      <Empowering onOpenModal={handleOpenModal} />
       <div className="container mx-auto">
         <DeveSection />
         <BestInClass />
@@ -43,14 +39,20 @@ const App = () => {
         <WeWorkWith />
         <NFTMarket />
         <NFTGameDev />
-        <MetaverseSection />
+        <MetaverseSection onOpenModal={handleOpenModal} />
         <FinTech />
       </div>
       <div className="footer-bg relative bg-center bg-no-repeat">
         <img src={GradientFooter} className="opacity-70 md:opacity-50 absolute w-full h-full bottom-0" />
         <TechnologySection />
-        <ProjectIdea />
+        <ProjectIdea onOpenModal={handleOpenModal} />
         <Footer />
+      </div>
+      <div className="container mx-auto">
+        {step === "howItWork" && (
+          <HowItWorksModal isOpen={isOpen} onCloseModal={handleCloseModal} handleCurrentModal={setStep} />
+        )}
+        {step === "success" && <SuccessModal isOpen={isOpen} onCloseModal={handleCloseModal} />}
       </div>
     </div>
   );

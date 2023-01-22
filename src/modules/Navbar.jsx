@@ -7,8 +7,8 @@ const Navbar = () => {
       <div className="flex flex-col lg:flex-row items-center">
         <img src={`${navLogo}`} alt="logo" className="md:block hidden" />
         <div
-          className="w-[300px] lg:w-[403px] hidden mt-3 h-[53px] bg-opacity-5 bg-white text-neutral-300 text-base
-        rounded-[20px] md:flex lg:mt-0 justify-evenly items-center backdrop-blur-md lg:translate-x-2/4 xl:ml-[271px]"
+          className="lg:w-[403px] hidden mt-3 h-[53px] bg-opacity-5 bg-white text-neutral-300 text-base
+          rounded-[20px] md:flex lg:mt-0 justify-evenly items-center backdrop-blur-md lg:translate-x-2/4 xl:ml-[271px] px-4"
         >
           <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
             Home

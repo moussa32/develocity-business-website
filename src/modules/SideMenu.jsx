@@ -36,7 +36,7 @@ const SideMenu = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3 bg-neutral-900/75">
               {navigation.map(item => (
                 <Disclosure.Button

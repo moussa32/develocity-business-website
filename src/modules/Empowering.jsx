@@ -7,11 +7,9 @@ import YahooFinanceIcons from "../assets/YahooFinance.svg";
 import SideMenu from "./SideMenu";
 import GradiantBackground from "../assets/images/GradientBackground.png";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
-import HowItWorksModal from "./Modals/HowItWorksModal";
-import SuccessModal from "./Modals/SuccessModal";
 import { Fade } from "react-awesome-reveal";
 
-const Empowering = ({ isOpen, onOpenModal, onCloseModal, currentModal, handleCurrentModal }) => {
+const Empowering = ({ onOpenModal }) => {
   return (
     <div className="relative main-bg bg-center bg-no-repeat text-center overflow-hidden w-full md:bg-cover md:bg-right md:text-left md:h-[810px]">
       <img src={GradiantBackground} className="absolute h-full w-full z-0" />
@@ -36,10 +34,6 @@ const Empowering = ({ isOpen, onOpenModal, onCloseModal, currentModal, handleCur
               Get a Free Quote
               <img className="inline pl-2" src={`${GoArrowIcon}`} alt="Go arrow" />
             </button>
-            {currentModal === "howItWork" && (
-              <HowItWorksModal isOpen={isOpen} onCloseModal={onCloseModal} handleCurrentModal={handleCurrentModal} />
-            )}
-            {currentModal === "success" && <SuccessModal isOpen={isOpen} onCloseModal={onCloseModal} />}
           </div>
         </div>
       </Fade>
