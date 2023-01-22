@@ -30,8 +30,8 @@ const SuccessModal = ({ isOpen, onCloseModal }) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 h-[320px] md:h-[420px] w-[800px]">
-                <h1 className="font-PolySans text-center text-4xl md:text-[48px] text-indigo-500 font-semibold mt-20 md:mt-40 mb-6">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 h-[250px] md:h-[420px] w-[800px]">
+                <h1 className="font-PolySans text-center text-3xl md:text-4xl md:text-[48px] text-indigo-500 font-semibold mt-14 md:mt-40 mb-6">
                   Thank you for your inquiry!
                 </h1>
                 <p className="text-center text-neutral-700 text-lg">
