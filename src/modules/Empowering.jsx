@@ -18,17 +18,17 @@ const Empowering = ({ onOpenModal }) => {
         <Navbar />
       </div>
       <Fade direction={"up"} triggerOnce={true} duration={2000}>
-        <div className="container grid grid-cols-2 mt-36 lg:mt-[230px] mx-auto z-20">
-          <div className="lg:pl-10 w-[200%] md:w-[593px] z-20">
-            <h2 className="md:text-6xl text-4xl text-center md:text-left font-bold mb-6">
+        <div className="container mx-auto lg:mx-0 mt-44 lg:mt-[230px] z-20">
+          <div className="mx-auto w-full lg:mx-0 lg:ml-44 md:w-[593px] z-20">
+            <h2 className="text-4xl text-center lg:text-left md:text-6xl font-bold mb-6 md:leading-tight">
               Empowering the Future of Finance
             </h2>
-            <p className="text-base text-neutral-300 mb-8">
+            <p className="text-center lg:text-left text-base text-neutral-300 mb-8 lg:max-w-[497px]">
               Develocity is a full-service software development, mobile app, and data analytics company, providing
               cutting-edge web 3 and blockchain solutions to businesses of all sizes.
             </p>
             <button
-              className="bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 mb-20"
+              className="block mx-auto lg:mx-0 bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 mb-20"
               onClick={onOpenModal}
             >
               Get a Free Quote

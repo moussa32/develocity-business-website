@@ -13,8 +13,8 @@ const DeveSection = () => {
           <Fade direction={"up"} triggerOnce={true}>
             <div className="bg-neutral-800/50 p-5 rounded-lg h-full">
               <img src={DoubleArrowIcon} alt="double arrow" title="double arrow" />
-              <h4 className="text-white mt-8 text-xl font-medium">Full service cycle</h4>
-              <p className="text-neutral-400 mt-2.5">
+              <h4 className="text-white mt-8 text-xl">Full service cycle</h4>
+              <p className="text-neutral-400 mt-2.5 leading-relaxed">
                 We can provide a full-service solution for your software development projects, from architecture design
                 to production deployment. Our professional teams handle challenges at any stage of the product
                 development cycle.
@@ -24,8 +24,8 @@ const DeveSection = () => {
           <Fade direction={"up"} triggerOnce={true}>
             <div className="bg-neutral-800/50 p-5 rounded-lg h-full">
               <img src={DoubleArrowIcon} alt="double arrow" title="double arrow" />
-              <h4 className="text-white mt-8 text-xl font-medium">Discovery phase</h4>
-              <p className="text-neutral-400 mt-2.5">
+              <h4 className="text-white mt-8 text-xl">Discovery phase</h4>
+              <p className="text-neutral-400 mt-2.5 leading-relaxed">
                 Every project starts with a discovery phase where we gather complete requirements and take a deep dive
                 into your vertical. We try to map out the entire project to figure out and match resources and
                 competencies across the team as early as possible.
@@ -35,8 +35,8 @@ const DeveSection = () => {
           <Fade direction={"up"} triggerOnce={true}>
             <div className="bg-neutral-800/50 p-5 rounded-lg h-full">
               <img src={DoubleArrowIcon} alt="double arrow" title="double arrow" />
-              <h4 className="text-white mt-8 text-xl font-medium">Quality-driven team</h4>
-              <p className="text-neutral-400 mt-2.5">
+              <h4 className="text-white mt-8 text-xl">Quality-driven team</h4>
+              <p className="text-neutral-400 mt-2.5 leading-relaxed">
                 We’re obsessed with quality development and strive for perfection. Our project and delivery managers
                 align the teams to the best practices in defect prevention to minimize the needed re-works and shorten
                 the time to launch.

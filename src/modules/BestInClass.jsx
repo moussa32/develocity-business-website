@@ -7,7 +7,7 @@ function BestInClass() {
     <div className="text-center  my-24">
       <div className="container mx-auto">
         <Fade direction={"up"} triggerOnce={true}>
-          <h1 className="text-center text-indigo-300 font-PolySans text-4xl font-normal md:text-5xl lg:text-7xl my-2.5">
+          <h1 className="text-center text-indigo-300 font-PolySans text-4xl font-normal md:text-5xl lg:text-7xl my-2.5 lg:leading-[90px]">
             Best in Class WEB 3.0 and <span className="block">Blockchain Solutions</span>
           </h1>
         </Fade>

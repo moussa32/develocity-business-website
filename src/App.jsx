@@ -30,7 +30,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-[rgba(7,7,7)] text-whiteText text-neutral-50">
+    <div className="bg-[rgba(7,7,7)] text-whiteText text-neutral-50 overflow-hidden">
       <Empowering onOpenModal={handleOpenModal} />
       <div className="container mx-auto">
         <DeveSection />
