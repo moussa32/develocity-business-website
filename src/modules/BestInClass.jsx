@@ -1,5 +1,6 @@
 import React from "react";
 import BestWithSection from "../assets/BestWithSection.png";
+import BestWithSectionAnimated from "../assets/BestWithSectionAnimated.webm";
 import { Fade } from "react-awesome-reveal";
 
 function BestInClass() {
@@ -63,7 +64,15 @@ function BestInClass() {
           </div>
           <div className="order-1 lg:order-2">
             <Fade direction={"up"} triggerOnce={true}>
-              <img src={`${BestWithSection}`} />
+              <video className="text-white" width="100%" height="100%" muted autoPlay>
+                <source src={BestWithSectionAnimated} type="video/webm" />
+                <source
+                  src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support HTML5 video.
+              </video>
+              {/* <img src={`${BestWithSection}`} /> */}
             </Fade>
           </div>
         </div>
