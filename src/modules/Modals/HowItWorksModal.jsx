@@ -95,7 +95,7 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                           name="about-project"
                         />
                       </div>
-                      <div className="flex items-center mt-3 md:ml-8">
+                      <div className="flex items-center mt-3 ml-3 md:ml-8">
                         <input
                           name="NDA-checkbox"
                           type="checkbox"
@@ -112,7 +112,6 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                       </button>
                     </div>
                   </form>
-                  
                 </Dialog.Panel>
               </Transition.Child>
             </div>
