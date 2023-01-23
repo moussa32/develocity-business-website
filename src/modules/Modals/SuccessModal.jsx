@@ -7,12 +7,7 @@ const SuccessModal = ({ isOpen, onCloseModal }) => {
 
   return (
     <Transition.Root show={isOpen} as={Fragment}>
-      <Dialog
-        as="div"
-        className="relative z-40 shadow-xl"
-        initialFocus={cancelBtnRef}
-        onClose={onCloseModal}
-      >
+      <Dialog as="div" className="relative z-40 shadow-xl" initialFocus={cancelBtnRef} onClose={onCloseModal}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -40,11 +35,10 @@ const SuccessModal = ({ isOpen, onCloseModal }) => {
                 <Fade direction={"up"} triggerOnce={true}>
                   <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 h-[250px] md:h-[420px] md:w-[800px]">
                     <h1 className="font-PolySans text-center text-2xl md:text-4xl md:text-[48px] text-indigo-500 font-semibold mt-16 md:mt-40 mb-3 md:mb-6">
-                      Thank you for your inquiry !
+                      Thank you for your inquiry!
                     </h1>
-                    <p className="text-center px-10 text-neutral-700 text-lg">
-                      We’ll review your message and will get back to you
-                      shortly.
+                    <p className="text-center text-sm px-10 text-neutral-700 md:text-lg">
+                      We’ll review your message and will get back to you shortly.
                     </p>
                   </Dialog.Panel>
                 </Fade>
