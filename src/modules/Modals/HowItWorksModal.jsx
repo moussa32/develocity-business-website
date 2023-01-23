@@ -1,10 +1,27 @@
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useRef } from "react";
+import emailjs from '@emailjs/browser';
 import { Dialog, Transition } from "@headlessui/react";
 import { ReactComponent as HowItWorksSvg } from "../../assets/HowItWorks.svg";
 import GoArrowIcon from "../../assets/images/GoArrowIcon.png";
 
 const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
   const cancelButtonRef = useRef(null);
+
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    handleCurrentModal("success")
+
+    // Send form data to develocity
+    emailjs.sendForm('service_dcamzsb', 'template_ba300wn', form.current, '-DbgStYLt_QSi5uVS')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <>
@@ -50,7 +67,7 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                       <p className="px-16 text-base font-medium text-[#404040] mt-3">You‘ll get a free quote from us</p>
                     </div>
                   </div> */}
-                  <form className="px-5 mt-16">
+                  <form ref={form} onSubmit={handleSubmit} className="px-5 mt-16">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                       <div className="mx-auto">
                         <label className="block text-sm text-neutral-500 font-medium ml-2 mb-2">Name *</label>
@@ -104,7 +121,7 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                         <label className="text-sm font-medium text-neutral-700 ml-2">I require NDA</label>
                       </div>
                       <button
-                        onClick={() => handleCurrentModal("success")}
+                        type="submit"
                         className="mx-auto md:mx-0 md:ml-8 w-[164px] text-white bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3 px-4 rounded-sm mt-8 mb-10"
                       >
                         Send Inquiry
