@@ -21,6 +21,14 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
       }, (error) => {
           console.log(error.text);
       });
+
+    // Send confirmation mail to client 
+    emailjs.sendForm('service_dcamzsb', 'template_100ls1s', form.current, '-DbgStYLt_QSi5uVS')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
 
   return (
