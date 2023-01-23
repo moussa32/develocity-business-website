@@ -64,7 +64,11 @@ function BestInClass() {
           </div>
           <div className="order-1 lg:order-2">
             <Fade direction={"up"} triggerOnce={true}>
-              <video src={BestWithSectionAnimated} muted autoPlay></video>
+              <video width="100%" height="100%" muted autoPlay>
+                <source src={BestWithSectionAnimated} type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
+              <video></video>
               {/* <img src={`${BestWithSection}`} /> */}
             </Fade>
           </div>
