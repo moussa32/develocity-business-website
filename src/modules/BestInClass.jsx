@@ -1,5 +1,6 @@
 import React from "react";
 import BestWithSection from "../assets/BestWithSection.png";
+import BestWithSectionAnimated from "../assets/BestWithSectionAnimated.webm";
 import { Fade } from "react-awesome-reveal";
 
 function BestInClass() {
@@ -63,7 +64,8 @@ function BestInClass() {
           </div>
           <div className="order-1 lg:order-2">
             <Fade direction={"up"} triggerOnce={true}>
-              <img src={`${BestWithSection}`} />
+              <video src={BestWithSectionAnimated} muted autoPlay></video>
+              {/* <img src={`${BestWithSection}`} /> */}
             </Fade>
           </div>
         </div>
