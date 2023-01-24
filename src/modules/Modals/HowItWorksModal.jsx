@@ -120,6 +120,8 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                           className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded md:w-[312px] p-4 focus:border-indigo-500"
                           type="text"
                           name="first-name"
+                          required
+                          minLength={3}
                         />
                       </div>
                       <div className="mx-auto mt-7 md:mt-0">
@@ -130,6 +132,8 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                           className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded md:w-[312px] p-4 focus:border-indigo-500"
                           type="text"
                           name="last-name"
+                          required
+                          minLength={3}
                         />
                       </div>
                       <div className="mx-auto mt-7">
@@ -138,8 +142,9 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                         </label>
                         <input
                           className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded md:w-[312px] p-4 focus:border-indigo-500"
-                          type="text"
+                          type="email"
                           name="email"
+                          required
                         />
                       </div>
                       <div className="mx-auto mt-7">
@@ -150,6 +155,8 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                           className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded md:w-[312px] p-4 focus:border-indigo-500"
                           type="text"
                           name="company"
+                          required
+                          minLength={3}
                         />
                       </div>
                     </div>
@@ -161,6 +168,7 @@ const HowItWorksModal = ({ isOpen, onCloseModal, handleCurrentModal }) => {
                         <textarea
                           className="border text-base text-neutral-700 border-neutral-300 outline-none transition-all ease-in-out duration-300 rounded p-4 focus:border-indigo-500 md:h-44 w-[284px] md:w-[695px]"
                           name="about-project"
+                          required
                         />
                       </div>
                       <div className="flex items-center mt-3 ml-3 md:ml-8">
