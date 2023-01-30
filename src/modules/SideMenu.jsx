@@ -5,7 +5,6 @@ import navLogo from "../assets/NavLogo.svg";
 import * as Scroll from "react-scroll";
 
 let Link = Scroll.Link;
-//offset={window.innerWidth < 768 ? -500 : -120}
 
 const navigation = [
   { name: "Home", target: "home" },
@@ -48,7 +47,6 @@ const SideMenu = () => {
                   key={item.name}
                   to={item.target}
                   className="text-neutral-300 hover:bg-opacity-5 hover:bg-white hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-900/75"
-                  aria-current={item.current ? "page" : undefined}
                   activeStyle={{
                     color: "white",
                     backgroundColor: "rgba(0, 0, 0, 0.5)",
