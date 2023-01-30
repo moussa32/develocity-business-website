@@ -2,18 +2,18 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import navLogo from "../assets/NavLogo.svg";
+import * as Scroll from "react-scroll";
+
+let Link = Scroll.Link;
+//offset={window.innerWidth < 768 ? -500 : -120}
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Web 3.0", href: "#", current: false },
-  { name: "NFT", href: "#", current: false },
-  { name: "Metaverse", href: "#", current: false },
-  { name: "DeFi", href: "#", current: false },
+  { name: "Home", target: "home" },
+  { name: "Web 3.0", target: "web3.0" },
+  { name: "NFT", target: "NFT" },
+  { name: "Metaverse", target: "Metaverse" },
+  { name: "DeFi", target: "DeFi" },
 ];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const SideMenu = () => {
   return (
@@ -33,27 +33,32 @@ const SideMenu = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <img src={`${navLogo}`} alt="logo" className="block md:hidden mx-auto" />
+              <img
+                src={`${navLogo}`}
+                alt="logo"
+                className="block md:hidden mx-auto"
+              />
             </div>
           </div>
 
           <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3 bg-neutral-900/75">
-              {navigation.map(item => (
-                <Disclosure.Button
+              {navigation.map((item) => (
+                <Link
                   key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-opacity-5 bg-white text-white"
-                      : "text-neutral-300 hover:bg-opacity-5 hover:bg-white hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-900/75"
-                  )}
+                  to={item.target}
+                  className="text-neutral-300 hover:bg-opacity-5 hover:bg-white hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-900/75"
                   aria-current={item.current ? "page" : undefined}
+                  activeStyle={{
+                    color: "white",
+                    backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  }}
+                  offset={-150}
+                  spy
+                  smooth
                 >
                   {item.name}
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
