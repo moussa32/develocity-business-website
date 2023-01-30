@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 
 const FinTech = () => {
   return (
-    <div className="mt-44">
+    <div id="DeFi" className="mt-44">
       <Fade direction={"up"} triggerOnce={true}>
         <h2 className="text-indigo-300 text-7xl text-center">
           Fintech and Data Analytics

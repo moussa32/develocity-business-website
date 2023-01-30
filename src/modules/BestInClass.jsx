@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 
 function BestInClass() {
   return (
-    <div className="text-center  my-24">
+    <div id="web3.0" className="text-center  my-24">
       <div className="container mx-auto">
         <Fade direction={"up"} triggerOnce={true}>
           <h1 className="text-center text-indigo-300 font-PolySans text-4xl font-normal md:text-5xl lg:text-7xl my-2.5 lg:leading-[90px]">

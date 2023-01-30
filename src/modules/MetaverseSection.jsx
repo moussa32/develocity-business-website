@@ -15,7 +15,7 @@ import { AiOutlineProject } from 'react-icons/ai';
 
 const MetaverseSection = ({ onOpenModal }) => {
   return (
-    <>
+    <div id="Metaverse">
       <section>
         <Fade direction={"up"} triggerOnce={true}>
           <h2 className="text-5xl md:text-6xl lg:text-7xl text-center text-indigo-300 mb-12">Metaverse Development</h2>
@@ -151,7 +151,7 @@ const MetaverseSection = ({ onOpenModal }) => {
           </button>
         </Fade>
       </section>
-    </>
+    </div>
   );
 };
 
