@@ -14,7 +14,9 @@ const TechnologySection = () => {
             <span className="text-base text-[#a3a3a3] font-extralight">PHP7</span>
             <span className="text-base text-[#a3a3a3] font-extralight">Python</span>
             <span className="text-base text-[#a3a3a3] font-extralight">Java</span>
+            <span className="text-base text-[#a3a3a3] font-extralight">TypeScript</span>
             <span className="text-base text-[#a3a3a3] font-extralight">Docker</span>
+            <span className="text-base text-[#a3a3a3] font-extralight">Node.js</span>
         </div>
         </Fade>
       </div>
@@ -22,11 +24,11 @@ const TechnologySection = () => {
         <Fade direction={"up"} triggerOnce={true}>
           <h3 className="lg:mr-[136px] text-xl lg:w-[280px]">Frontend</h3>
           <div className="flex flex-wrap gap-y-2 gap-x-8 lg:gap-9 lg:justify-start justify-center">
+            <span className="text-base text-[#a3a3a3] font-extralight">HTML</span>
+            <span className="text-base text-[#a3a3a3] font-extralight">CSS</span>
             <span className="text-base text-[#a3a3a3] font-extralight">React</span>
             <span className="text-base text-[#a3a3a3] font-extralight">Vue.js</span>
             <span className="text-base text-[#a3a3a3] font-extralight">Angular</span>
-            <span className="text-base text-[#a3a3a3] font-extralight">Node.js</span>
-            <span className="text-base text-[#a3a3a3] font-extralight">TypeScript</span>
             <span className="text-base text-[#a3a3a3] font-extralight">GraphQL</span>
           </div>
         </Fade>
