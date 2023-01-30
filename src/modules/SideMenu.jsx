@@ -5,9 +5,10 @@ import navLogo from "../assets/NavLogo.svg";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "Company", href: "#", current: false },
-  { name: "Services", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Web 3.0", href: "#", current: false },
+  { name: "NFT", href: "#", current: false },
+  { name: "Metaverse", href: "#", current: false },
+  { name: "DeFi", href: "#", current: false },
 ];
 
 function classNames(...classes) {
