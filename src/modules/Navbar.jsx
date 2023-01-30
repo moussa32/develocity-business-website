@@ -14,7 +14,10 @@ const Navbar = () => {
           rounded-[20px] md:flex lg:mt-0 justify-evenly items-center backdrop-blur-md lg:translate-x-2/4 xl:ml-[271px] px-4"
         >
           <Link
-            activeClass="active"
+            activeStyle={{
+              color: "rgb(129, 140, 248)",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            }}
             className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer"
             spy
             smooth
@@ -23,7 +26,10 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            activeClass="active"
+            activeStyle={{
+              color: "rgb(129, 140, 248)",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            }}
             className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer"
             offset={-150}
             spy
@@ -33,7 +39,10 @@ const Navbar = () => {
             Web 3.0
           </Link>
           <Link
-            activeClass="active"
+            activeStyle={{
+              color: "rgb(129, 140, 248)",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            }}
             className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer"
             offset={-150}
             spy
@@ -43,7 +52,10 @@ const Navbar = () => {
             NFT
           </Link>
           <Link
-            activeClass="active"
+            activeStyle={{
+              color: "rgb(129, 140, 248)",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            }}
             className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer"
             offset={-150}
             spy
@@ -53,7 +65,10 @@ const Navbar = () => {
             Metaverse
           </Link>
           <Link
-            activeClass="active"
+            activeStyle={{
+              color: "rgb(129, 140, 248)",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            }}
             className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer"
             offset={-150}
             spy
