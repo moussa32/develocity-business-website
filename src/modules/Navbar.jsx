@@ -14,13 +14,16 @@ const Navbar = () => {
             Home
           </a>
           <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
-            Company
+            Web 3.0
           </a>
           <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
-            Services
+            NFT
           </a>
           <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
-            Contact
+            Metaverse
+          </a>
+          <a className="transition duration-500 hover:text-indigo-400 hover:bg-white/5 px-4 py-2 rounded-lg cursor-pointer">
+            DeFi
           </a>
         </div>
       </div>
