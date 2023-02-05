@@ -11,7 +11,7 @@ const Navbar = () => {
         <img src={`${navLogo}`} alt="logo" className="md:block hidden" />
         <div
           className="lg:w-[501px] hidden mt-3 h-[53px] bg-opacity-5 bg-white text-neutral-300 text-base
-          rounded-[20px] md:flex lg:mt-0 justify-evenly items-center backdrop-blur-md nanbar-items lg:translate-x-2/4 px-4"
+          rounded-[20px] md:flex lg:mt-0 justify-evenly items-center backdrop-blur-md lg:-ml-28 nanbar-items lg:translate-x-2/4 px-4"
         >
           <Link
             activeStyle={{

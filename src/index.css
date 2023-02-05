@@ -31,9 +31,13 @@
 .gradient-footer {
   background-image: url("./assets/GradientFooter.png");
 }
+@media (min-width: 1440px){
+  .nanbar-items{
+    margin-left: 0 !important;
+  }
+}
 @media (min-width: 2560px){
   .nanbar-items{
-    margin-left: 10%;
+    margin-left: 7rem !important;
   }
-
 }
