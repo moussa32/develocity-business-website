@@ -7,11 +7,15 @@ let Link = Scroll.Link;
 const Navbar = () => {
   return (
     <nav className="container pt-12 mx-auto relative">
-      <div className="flex flex-col lg:flex-row items-center">
-        <img src={`${navLogo}`} alt="logo" className="md:block hidden" />
+      <img
+        src={`${navLogo}`}
+        alt="logo"
+        className="md:block hidden mx-auto lg:mt-4 lg:absolute"
+      />
+      <div className="w-full">
         <div
-          className="lg:w-[501px] hidden mt-3 h-[53px] bg-opacity-5 bg-white text-neutral-300 text-base
-          rounded-[20px] md:flex lg:mt-0 justify-evenly items-center backdrop-blur-md lg:translate-x-2/4 xl:ml-[271px] px-4"
+          className="md:w-[501px] mx-auto hidden mt-3 h-[53px] bg-opacity-5 bg-white text-neutral-300 text-base
+          rounded-[20px] md:flex lg:mt-0 justify-evenly items-center backdrop-blur-md px-4"
         >
           <Link
             activeStyle={{
