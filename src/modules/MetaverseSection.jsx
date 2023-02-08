@@ -3,10 +3,16 @@ import EmptyCircal from "../assets/images/EmptyCircal.png";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
 import MetaverseVdieo from "../assets/Metaverse.mp4";
 import { Fade } from "react-awesome-reveal";
+import { HiOutlineAcademicCap } from "react-icons/hi";
+import { GiVirtualMarker } from "react-icons/gi";
+import { FaArtstation } from "react-icons/fa";
+import { TbSocial } from "react-icons/tb";
+import { CgClapperBoard } from "react-icons/cg";
+import { AiOutlineProject } from "react-icons/ai";
 
 const MetaverseSection = ({ onOpenModal }) => {
   return (
-    <>
+    <div id="Metaverse">
       <section className="py-20 overflow-hidden">
         <Fade className="z-20 relative" direction={"up"} triggerOnce={true}>
           <h2 className="text-5xl md:text-6xl lg:text-7xl text-center text-indigo-300 mb-12 lg:mb-[86px] z-20">
@@ -76,7 +82,11 @@ const MetaverseSection = ({ onOpenModal }) => {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-20 gap-x-22 mt-20">
           <div>
             <Fade direction={"up"} triggerOnce={true}>
-              <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
+              <TbSocial
+                fill="white"
+                size={"52px"}
+                className="block mx-auto p-2 border-4 bg-indigo-500 border-indigo-500 border-opacity-25 mb-10 rounded-full"
+              />
               <h3 className="text-xl">Art galleries</h3>
               <p className="mt-2 text-neutral-400 text-base">
                 Showcase your artworks on virtual exhibitions for NFT art that bring together collectors and creators to
@@ -86,7 +96,11 @@ const MetaverseSection = ({ onOpenModal }) => {
           </div>
           <div>
             <Fade direction={"up"} triggerOnce={true}>
-              <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
+              <GiVirtualMarker
+                fill="white"
+                size={"52px"}
+                className="block mx-auto p-2 border-4 bg-indigo-500 border-indigo-500 border-opacity-25 mb-10 rounded-full"
+              />
               <h3 className="text-xl">Virtual land</h3>
               <p className="mt-2 text-neutral-400 text-base">
                 Live a life in the Metaverse you want! Own land in the virtual world where you can build real estate or
@@ -96,7 +110,10 @@ const MetaverseSection = ({ onOpenModal }) => {
           </div>
           <div>
             <Fade direction={"up"} triggerOnce={true}>
-              <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
+              <HiOutlineAcademicCap
+                size={"52px"}
+                className="block mx-auto p-2 border-4 bg-indigo-500 border-indigo-500 border-opacity-25 mb-10 rounded-full"
+              />
               <h3 className="text-xl">Education</h3>
               <p className="mt-2 text-neutral-400 text-base">
                 Enhance the level of education by visualizing every idea, every concept explained to students. In this
@@ -106,7 +123,11 @@ const MetaverseSection = ({ onOpenModal }) => {
           </div>
           <div>
             <Fade direction={"up"} triggerOnce={true}>
-              <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
+              <AiOutlineProject
+                fill="white"
+                size={"52px"}
+                className="block mx-auto p-2 border-4 bg-indigo-500 border-indigo-500 border-opacity-25 mb-10 rounded-full"
+              />
               <h3 className="text-xl">E-commerce</h3>
               <p className="mt-2 text-neutral-400 text-base">
                 Provide new opportunities for online customers by creating a virtual store they could seamlessly browse,
@@ -116,7 +137,11 @@ const MetaverseSection = ({ onOpenModal }) => {
           </div>
           <div>
             <Fade direction={"up"} triggerOnce={true}>
-              <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
+              <FaArtstation
+                fill="white"
+                size={"52px"}
+                className="block mx-auto p-2 border-4 bg-indigo-500 border-indigo-500 border-opacity-25 mb-10 rounded-full"
+              />
               <h3 className="text-xl">Retail</h3>
               <p className="mt-2 text-neutral-400 text-base">
                 Deliver the new-age shopping experience to be right at users’ fingertips, creating shops, malls, display
@@ -126,7 +151,11 @@ const MetaverseSection = ({ onOpenModal }) => {
           </div>
           <div>
             <Fade direction={"up"} triggerOnce={true}>
-              <img src={DoubleArrowIcon} alt="double arrow" className="block mx-auto  mb-10" />
+              <CgClapperBoard
+                fill="white"
+                size={"52px"}
+                className="block mx-auto p-2 border-4 bg-indigo-500 border-indigo-500 border-opacity-25 mb-10 rounded-full"
+              />
               <h3 className="text-xl">Social media</h3>
               <p className="mt-2 text-neutral-400 text-base">
                 Launch a social media Metaverse where users could chat, consume content, like and share each other’s
@@ -153,7 +182,7 @@ const MetaverseSection = ({ onOpenModal }) => {
           </button>
         </Fade>
       </section>
-    </>
+    </div>
   );
 };
 
