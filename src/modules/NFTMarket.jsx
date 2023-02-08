@@ -1,5 +1,4 @@
-import React from "react";
-import NFT from "../assets/NFT.png";
+import AstronautInSpace from "../assets/AstronautInSpace.mp4";
 import { Fade } from "react-awesome-reveal";
 
 function NFTMarket() {
@@ -15,31 +14,31 @@ function NFTMarket() {
   ];
   return (
     <div className="text-center my-24">
-      <div className="container mx-auto">
+      <div className="container">
         <Fade direction={"up"} triggerOnce={true}>
           <h1 className="ml-6 text-indigo-300 text-4xl md:text-7xl my-2.5">NFT and NFT Marketplace</h1>
         </Fade>
         <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2">
-          <div className="flex flex-col text-center md:text-left order-2 lg:order-1">
-            <Fade direction={"up"} triggerOnce={true}>
-              <p className="ml-6 text-xs text-indigo-500 capitalize mb-4">GET STARTED WITH NFT DEVELOPMENT</p>
-              <h3 className="w-5/6 ml-6 text-white text-5xl mb-9">NFT Marketplace and Metaverse Development</h3>
+          <div className="flex flex-col text-center md:text-left order-2 lg:order-1 z-20 relative">
+            <Fade cla direction={"up"} triggerOnce={true}>
+              <p className="text-xs text-indigo-500 capitalize mb-4">GET STARTED WITH NFT DEVELOPMENT</p>
+              <h3 className="text-white text-5xl mb-9">NFT Marketplace and Metaverse Development</h3>
             </Fade>
             <Fade direction={"up"} triggerOnce={true}>
-              <p className="ml-6 text-gray-400 text-base pb-7 w-5/6">
+              <p className="text-gray-400 text-base pb-7">
                 We have decades of experience in NFT development and can help you create a robust and secure marketplace
                 for NFTs. We also offer smart contract programming and audit services to ensure the security and
                 effectiveness of your NFTs.
               </p>
             </Fade>
             <Fade direction={"up"} triggerOnce={true}>
-              <p className="ml-6 text-gray-400 text-base pb-7 w-5/6">
+              <p className="text-gray-400 text-base pb-7">
                 Offer your customers enhanced and seamless NFT minting, selling and buying on a secure NFT platform that
                 brings together global NFT creators and buyers at one place.
               </p>
             </Fade>
             <Fade direction={"up"} triggerOnce={true}>
-              <div className="grid px-4 gap-2 grid-cols-2">
+              <div className="grid gap-x-6 gap-y-2 grid-cols-2">
                 {list.map((item, index) => (
                   <div className="flex" key={index}>
                     <svg
@@ -62,8 +61,17 @@ function NFTMarket() {
             </Fade>
           </div>
           <div className="order-1 lg:order-2 flex justify-center md:justify-start mb-20">
-            <Fade className="mx-auto" direction={"up"} triggerOnce={true}>
-              <img src={`${NFT}`} />
+            <Fade className="w-full h-full" direction={"up"} triggerOnce={true}>
+              <video
+                className="text-white lg:absolute max-w-[920px] bottom-[-65%] left-[-32%] z-0"
+                height="100%"
+                muted
+                loop
+                autoPlay
+              >
+                <source src={AstronautInSpace} type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
             </Fade>
           </div>
         </div>
