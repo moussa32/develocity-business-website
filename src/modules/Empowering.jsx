@@ -12,7 +12,7 @@ import { Fade } from "react-awesome-reveal";
 const Empowering = ({ onOpenModal }) => {
   return (
     <div id="home" className="relative text-center overflow-hidden w-full md:text-left h-screen">
-      <video className="absolute h-full w-full z-0" height="100%" muted autoPlay>
+      <video className="absolute h-full w-full z-0 object-cover" height="100%" muted autoPlay>
         <source src={HeaderBackground} type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
