@@ -1,18 +1,21 @@
 import React from "react";
 import Navbar from "./Navbar";
-import BloombergIcon from "../assets/Bloomberg.svg";
-import WiredIcon from "../assets/Wired.svg";
-import CoindeskIcons from "../assets/Coindesk.svg";
-import YahooFinanceIcons from "../assets/YahooFinance.svg";
+// import BloombergIcon from "../assets/Bloomberg.svg";
+// import WiredIcon from "../assets/Wired.svg";
+// import CoindeskIcons from "../assets/Coindesk.svg";
+// import YahooFinanceIcons from "../assets/YahooFinance.svg";
 import SideMenu from "./SideMenu";
-import GradiantBackground from "../assets/images/GradientBackground.png";
+import HeaderBackground from "../assets/Header.mp4";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
 import { Fade } from "react-awesome-reveal";
 
 const Empowering = ({ onOpenModal }) => {
   return (
-    <div className="relative main-bg bg-center bg-no-repeat text-center overflow-hidden w-full md:bg-cover md:bg-right md:text-left md:h-[810px]">
-      <img src={GradiantBackground} className="absolute h-full w-full z-0" />
+    <div className="relative text-center overflow-hidden w-full md:text-left h-screen">
+      <video className="absolute h-full w-full z-0" height="100%" muted autoPlay>
+        <source src={HeaderBackground} type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
       <div className="fixed w-full z-40">
         <SideMenu />
         <Navbar />

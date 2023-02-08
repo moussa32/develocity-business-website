@@ -1,18 +1,20 @@
-import MetaverseImage from "../assets/images/Metaverse-Image.png";
 import DoubleArrowIcon from "../assets/images/DoubleArrowIcon.svg";
 import EmptyCircal from "../assets/images/EmptyCircal.png";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
+import MetaverseVdieo from "../assets/Metaverse.mp4";
 import { Fade } from "react-awesome-reveal";
 
 const MetaverseSection = ({ onOpenModal }) => {
   return (
     <>
-      <section>
-        <Fade direction={"up"} triggerOnce={true}>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl text-center text-indigo-300 mb-12">Metaverse Development</h2>
+      <section className="py-20 overflow-hidden">
+        <Fade className="z-20 relative" direction={"up"} triggerOnce={true}>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl text-center text-indigo-300 mb-12 lg:mb-[86px] z-20">
+            Metaverse Development
+          </h2>
         </Fade>
         <div className="lg:grid lg:grid-cols-3">
-          <div className="text-center py-8 gap-4 flex flex-col justify-evenly lg:text-right">
+          <div className="text-center max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-right z-20">
             <div>
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Interoperable</h3>
@@ -33,9 +35,18 @@ const MetaverseSection = ({ onOpenModal }) => {
             </div>
           </div>
           <Fade direction={"up"} triggerOnce={true}>
-            <img src={MetaverseImage} alt="Metaverse" className="block mx-auto px-11" />
+            <video
+              className="absolute left-[-89%] top-[-85%] z-0 max-w-[1080px] inset-x-0"
+              height="100%"
+              muted
+              loop
+              autoPlay
+            >
+              <source src={MetaverseVdieo} type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
           </Fade>
-          <div className="text-center py-8 gap-4 flex flex-col justify-evenly lg:text-left">
+          <div className="text-center max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-left">
             <div>
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Scalable</h3>

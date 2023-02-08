@@ -3,6 +3,12 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        screens: {
+          xl: "1216px",
+        },
+      },
       fontSize: {
         h4: ["28px", "36px"],
         h3: ["32px", "40px"],
