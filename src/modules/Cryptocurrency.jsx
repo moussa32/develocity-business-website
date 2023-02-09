@@ -8,7 +8,7 @@ const Cryptocurrency = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <Fade className="h-full w-full" direction={"up"} triggerOnce={true}>
           <video
-            className="text-white absolute max-w-[920px] bottom-[-65%] left-[-22%]"
+            className="text-white xl:absolute xl:max-w-[920px] xl:bottom-[-65%] xl:left-[-22%]"
             height="100%"
             muted
             loop

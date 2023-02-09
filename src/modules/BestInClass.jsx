@@ -57,7 +57,11 @@ function BestInClass() {
           </div>
           <div className="order-1 w-full relative lg:order-2">
             <Fade className="h-full" direction={"up"} triggerOnce={true}>
-              <video className="max-w-[1080px] absolute top-[-42%] left-[-28%] z-0 text-white" muted autoPlay>
+              <video
+                className="xl:max-w-[1080px] xl:absolute xl:top-[-42%] xl:left-[-28%] z-0 text-white"
+                muted
+                autoPlay
+              >
                 <source src={CodePanel} type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>

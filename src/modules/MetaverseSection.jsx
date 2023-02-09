@@ -42,7 +42,7 @@ const MetaverseSection = ({ onOpenModal }) => {
           </div>
           <Fade direction={"up"} triggerOnce={true}>
             <video
-              className="absolute left-[-89%] top-[-85%] z-0 max-w-[1080px] inset-x-0"
+              className="xl:absolute xl:left-[-89%] xl:top-[-85%] z-0 xl:max-w-[1080px] xl:inset-x-0"
               height="100%"
               muted
               loop
