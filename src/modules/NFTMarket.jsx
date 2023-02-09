@@ -15,7 +15,7 @@ function NFTMarket() {
   return (
     <div className="text-center my-24">
       <div className="container">
-        <Fade direction={"up"} triggerOnce={true}>
+        <Fade className="z-20 relative" direction={"up"} triggerOnce={true}>
           <h1 className="ml-6 text-indigo-300 text-4xl md:text-7xl my-2.5">NFT and NFT Marketplace</h1>
         </Fade>
         <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2">
