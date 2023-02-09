@@ -15,8 +15,8 @@ const FinTech = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 mt-11 text-center md:text-left">
         <div className="lg:w-[592px] bg-opacity-5 bg-white rounded-[42px] p-10 mt-20 mx-5">
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="relative h-[400px] max-w-[480px] mx-auto">
-              <video className="text-white lg:absolute max-w-[480] z-0" height="100%" muted autoPlay>
+            <div className="relative xl:h-[400px] mxl:ax-w-[480px] mx-auto">
+              <video className="text-white xl:absolute xl:max-w-[480] z-0" height="100%" muted autoPlay>
                 <source src={Cards} type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>
@@ -41,8 +41,8 @@ const FinTech = () => {
         </div>
         <div className="lg:w-[592px] bg-opacity-5 bg-white rounded-[42px] p-10 mt-20 mx-5">
           <Fade direction={"up"} triggerOnce={true}>
-            <div className="relative h-[400px] max-w-[480px] mx-auto">
-              <video className="text-white lg:absolute max-w-[920px] z-0" height="100%" muted autoPlay>
+            <div className="relative xl:h-[400px] xl:max-w-[480px] mx-auto">
+              <video className="text-white xl:absolute xl:max-w-[920px] z-0" height="100%" muted autoPlay>
                 <source src={PieChart} type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>
