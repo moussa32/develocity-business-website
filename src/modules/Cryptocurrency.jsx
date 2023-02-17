@@ -15,7 +15,7 @@ const Cryptocurrency = () => {
             playsInline
             autoPlay
           >
-            <source src={CryptoVideo} type="video/webm" />
+            <source src={CryptoVideo} type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
         </Fade>
