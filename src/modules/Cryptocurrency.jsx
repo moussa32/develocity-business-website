@@ -6,7 +6,7 @@ const Cryptocurrency = () => {
   return (
     <div className="container text-center md:text-left lg:mt-20 md:mb-[211px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-        <div className="h-[400px] xl:h-full">
+        <div className="h-[300px] sm:h-[400px] xl:h-full">
           <Fade className="h-full w-full relative lg:h-full" direction={"up"} triggerOnce={true}>
             <video
               className="text-white absolute max-w-[550px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:max-w-[900px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[920px] xl:transform-none xl:top-[-65%] xl:left-[-22%]"
