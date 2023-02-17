@@ -30,7 +30,7 @@ function NFTGameDev() {
             playsInline
             autoPlay
           >
-            <source src={Joystick} type="video/webm" />
+            <source src={Joystick} type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
         </Fade>

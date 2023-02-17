@@ -70,7 +70,7 @@ function NFTMarket() {
                 loop
                 autoPlay
               >
-                <source src={AstronautInSpace} type="video/webm" />
+                <source src={AstronautInSpace} type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>
             </Fade>
