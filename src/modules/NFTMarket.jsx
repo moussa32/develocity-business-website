@@ -61,10 +61,10 @@ function NFTMarket() {
             </Fade>
           </div>
           <div className="order-1 lg:order-2 flex justify-center md:justify-start lg:mb-20">
-            <Fade className="w-full h-full" direction={"up"} triggerOnce={true}>
+            <Fade className="h-[300px] sm:h-[400px] w-full lg:h-full" direction={"up"} triggerOnce={true}>
               <video
                 playsInline
-                className="text-white w-full xl:absolute xl:max-w-[920px] xl:bottom-[-65%] xl:left-[-32%] z-0"
+                className="text-white absolute max-w-[500px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:max-w-[600px] md:max-w-[660px] lg:max-w-[800px] xl:transform-none xl:max-w-[920px] xl:top-[-50%] xl:left-[-32%] z-0"
                 height="100%"
                 muted
                 loop

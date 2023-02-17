@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 function NFTGameDev() {
   return (
-    <section id="NFT">
+    <section id="NFT" className="text-center xl:text-left">
       <header className="relative z-20 lg:mb-[85px] mt-32">
         <Fade className="relative z-20" direction={"up"} triggerOnce={true}>
           <span className="font-semibold text-center block text-xs text-indigo-400">
@@ -21,9 +21,9 @@ function NFTGameDev() {
       </header>
 
       <div className="grid grid-cols-1 gap-y-6 mb-[135px] xl:grid-cols-2 xl:gap-x-6">
-        <Fade direction={"up"} triggerOnce={true}>
+        <Fade className="h-[300px] md:h-[400px] xl:h-full" direction={"up"} triggerOnce={true}>
           <video
-            className="text-white w-full xl:absolute xl:max-w-[920px] xl:bottom-[-73%] xl:left-[-29%]"
+            className="text-white absolute max-w-[500px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:max-w-[600px] md:max-w-[660px] xl:transform-none xl:max-w-[920px] xl:top-[-73%] xl:left-[-29%]"
             height="100%"
             muted
             loop
@@ -62,8 +62,8 @@ function NFTGameDev() {
 
       <div className="relative z-20 grid grid-cols-1 gap-6 gap-x-8 lg:grid-cols-2 xl:grid-cols-3">
         <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px]">
-          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8"></div>
-          <h3 className="mb-6 font-medium text-xl max-w-[257px]">Play-to-Earn Game Development</h3>
+          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8 mx-auto xl:mx-0"></div>
+          <h3 className="mb-6 font-medium text-xl max-w-[257px] mx-auto xl:mx-0">Play-to-Earn Game Development</h3>
           <p className="text-base text-neutral-400">
             Launch a P2E game like Axie Infinity or Sorare. Give your users a chance to create an income stream by
             playing. We offer diligently crafted services to help you launch a game like Axie Infinity or Sorare, or
@@ -71,8 +71,8 @@ function NFTGameDev() {
           </p>
         </div>
         <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px]">
-          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8"></div>
-          <h3 className="mb-6 font-medium text-xl max-w-[257px]">Move-to-Earn Game Development</h3>
+          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8 mx-auto xl:mx-0"></div>
+          <h3 className="mb-6 font-medium text-xl max-w-[257px] mx-auto xl:mx-0">Move-to-Earn Game Development</h3>
           <p className="text-base text-neutral-400">
             StepN is a buzzword among online gamers. StepN NFTs generated a profit of over $26.8 million in Q1 2022.
             Capture the gaming market share like StepN by launching your move-to-earn game. Our NFT game company
@@ -80,8 +80,8 @@ function NFTGameDev() {
           </p>
         </div>
         <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px]">
-          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8"></div>
-          <h3 className="mb-6 font-medium text-xl max-w-[257px]">Player-vs-Player Game Development</h3>
+          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8 mx-auto xl:mx-0"></div>
+          <h3 className="mb-6 font-medium text-xl max-w-[257px] mx-auto xl:mx-0">Player-vs-Player Game Development</h3>
           <p className="text-base text-neutral-400">
             Gods Unchained is one of the popular games where players gather cards by either buying them from other
             players or by winning PVP matchups. Disrupt the market with a similar PVP game or a customized one. We

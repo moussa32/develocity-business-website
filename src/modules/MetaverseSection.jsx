@@ -13,36 +13,36 @@ import { AiOutlineProject } from "react-icons/ai";
 const MetaverseSection = ({ onOpenModal }) => {
   return (
     <div id="Metaverse">
-      <section className="py-20 overflow-hidden">
+      <section className="lg:py-20 overflow-hidden">
         <Fade className="z-20 relative" direction={"up"} triggerOnce={true}>
           <h2 className="text-5xl md:text-6xl lg:text-7xl text-center text-indigo-300 mb-12 lg:mb-[86px] z-20">
             Metaverse Development
           </h2>
         </Fade>
-        <div className="lg:grid lg:grid-cols-3">
+        <div className="md:grid md:grid-cols-3">
           <div className="text-center mx-auto lg:mx-0 max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-right z-20">
-            <div>
+            <div className="z-20">
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Interoperable</h3>
-                <p className="mt-2 text-neutral-400 text-base">
+                <p className="mt-2 text-neutral-400 text-sm lg:text-base">
                   Automate and secure operations on the Metaverse by trusting us with the development of Metaverse smart
                   contracts compatible across various chains.
                 </p>
               </Fade>
             </div>
-            <div>
+            <div className="z-20">
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Secure</h3>
-                <p className="mt-2 text-neutral-400 text-base">
+                <p className="mt-2 text-neutral-400 text-sm lg:text-base">
                   Mitigate hacker attacks with the Proof-of-Work security algorithm where the whole network validates
                   each block generated, with the mining reward distributed among stakeholders.
                 </p>
               </Fade>
             </div>
           </div>
-          <Fade direction={"up"} triggerOnce={true}>
+          <Fade className="h-[300px] md:h-[400px] xl:h-full" direction={"up"} triggerOnce={true}>
             <video
-              className="xl:absolute xl:left-[-89%] xl:top-[-85%] z-0 xl:max-w-[1080px] xl:inset-x-0"
+              className="absolute max-w-[650px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:max-w-[600px] md:max-w-[570px] lg:max-w-[800px] xl:transform-none xl:left-[-89%] xl:top-[-85%] xl:max-w-[1080px] xl:inset-x-0"
               height="100%"
               muted
               playsInline
@@ -57,7 +57,7 @@ const MetaverseSection = ({ onOpenModal }) => {
             <div>
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Scalable</h3>
-                <p className="mt-2 text-neutral-400 text-base">
+                <p className="mt-2 text-neutral-400 text-sm lg:text-base">
                   Run cross-chain operations profitably with a modular framework that allows connecting dapps, services,
                   and independent blockchains to exchange data and perform transactions at low costs.
                 </p>
@@ -66,7 +66,7 @@ const MetaverseSection = ({ onOpenModal }) => {
             <div>
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Diverse</h3>
-                <p className="mt-2 text-neutral-400 text-base">
+                <p className="mt-2 text-neutral-400 text-sm lg:text-base">
                   Be ahead of the Metaverse innovation! Introduce a new NFT product to the existing Metaverse or create
                   your own blockchain-based NFT marketplace from scratch — whatever your imagination tells you!
                 </p>
