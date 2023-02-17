@@ -13,7 +13,7 @@ const FinTech = () => {
         <h2 className="text-indigo-300 text-7xl text-center">Fintech and Data Analytics</h2>
       </Fade>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-11 text-center md:text-left">
-        <div className="lg:w-[592px] bg-opacity-5 bg-white rounded-[42px] p-10 mt-20 mx-5">
+        <div className="lg:w-[592px] bg-[#0D0D0D] rounded-[42px] p-10 mt-20 mx-5">
           <Fade direction={"up"} triggerOnce={true}>
             <div className="relative xl:h-[400px] mxl:ax-w-[480px] mx-auto">
               <video playsInline className="text-white xl:absolute xl:max-w-[480] z-0" height="100%" muted autoPlay>
@@ -39,7 +39,7 @@ const FinTech = () => {
             </p>
           </Fade>
         </div>
-        <div className="lg:w-[592px] bg-opacity-5 bg-white rounded-[42px] p-10 mt-20 mx-5">
+        <div className="lg:w-[592px] bg-[#0D0D0D] rounded-[42px] p-10 mt-20 mx-5">
           <Fade direction={"up"} triggerOnce={true}>
             <div className="relative xl:h-[400px] xl:max-w-[480px] mx-auto">
               <video playsInline className="text-white xl:absolute xl:max-w-[920px] z-0" height="100%" muted autoPlay>
