@@ -27,6 +27,7 @@ function NFTGameDev() {
             height="100%"
             muted
             loop
+            playsInline
             autoPlay
           >
             <source src={Joystick} type="video/webm" />

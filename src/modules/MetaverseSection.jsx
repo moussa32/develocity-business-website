@@ -45,6 +45,7 @@ const MetaverseSection = ({ onOpenModal }) => {
               className="xl:absolute xl:left-[-89%] xl:top-[-85%] z-0 xl:max-w-[1080px] xl:inset-x-0"
               height="100%"
               muted
+              playsInline
               loop
               autoPlay
             >

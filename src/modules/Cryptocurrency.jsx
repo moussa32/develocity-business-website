@@ -12,6 +12,7 @@ const Cryptocurrency = () => {
             height="100%"
             muted
             loop
+            playsInline
             autoPlay
           >
             <source src={CryptoVideo} type="video/webm" />
