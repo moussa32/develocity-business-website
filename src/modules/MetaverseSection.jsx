@@ -20,7 +20,7 @@ const MetaverseSection = ({ onOpenModal }) => {
           </h2>
         </Fade>
         <div className="lg:grid lg:grid-cols-3">
-          <div className="text-center max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-right z-20">
+          <div className="text-center mx-auto lg:mx-0 max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-right z-20">
             <div>
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Interoperable</h3>
@@ -53,7 +53,7 @@ const MetaverseSection = ({ onOpenModal }) => {
               Your browser does not support HTML5 video.
             </video>
           </Fade>
-          <div className="text-center max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-left">
+          <div className="text-center mx-auto lg:mx-0 max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-left">
             <div>
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Scalable</h3>
