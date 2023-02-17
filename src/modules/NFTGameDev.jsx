@@ -23,7 +23,7 @@ function NFTGameDev() {
       <div className="grid grid-cols-1 gap-y-6 mb-[135px] xl:grid-cols-2 xl:gap-x-6">
         <Fade direction={"up"} triggerOnce={true}>
           <video
-            className="text-white xl:absolute xl:max-w-[920px] xl:bottom-[-73%] xl:left-[-29%]"
+            className="text-white w-full xl:absolute xl:max-w-[920px] xl:bottom-[-73%] xl:left-[-29%]"
             height="100%"
             muted
             loop

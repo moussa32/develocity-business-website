@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Cryptocurrency = () => {
   return (
-    <div className="container text-center md:text-left mt-20 md:mb-[211px]">
+    <div className="container text-center md:text-left lg:mt-20 md:mb-[211px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <Fade className="h-full w-full" direction={"up"} triggerOnce={true}>
           <video
