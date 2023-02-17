@@ -60,6 +60,7 @@ function BestInClass() {
               <video
                 className="xl:max-w-[1080px] xl:absolute xl:top-[-42%] xl:left-[-28%] z-0 text-white"
                 muted
+                loop
                 playsInline
                 autoPlay
               >

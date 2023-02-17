@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 function NFTGameDev() {
   return (
     <section id="NFT">
-      <header className="relative z-20 mb-[85px] mt-32">
+      <header className="relative z-20 lg:mb-[85px] mt-32">
         <Fade className="relative z-20" direction={"up"} triggerOnce={true}>
           <span className="font-semibold text-center block text-xs text-indigo-400">
             TOP BLOCKCHAINS ARE AT YOUR DISPOSAL

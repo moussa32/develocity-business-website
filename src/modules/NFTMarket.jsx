@@ -18,7 +18,7 @@ function NFTMarket() {
         <Fade className="z-20 relative" direction={"up"} triggerOnce={true}>
           <h1 className="ml-6 text-indigo-300 text-4xl md:text-7xl my-2.5">NFT and NFT Marketplace</h1>
         </Fade>
-        <div className="grid mt-28 gap-6 grid-cols-1 lg:grid-cols-2">
+        <div className="grid lg:mt-28 gap-6 grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col text-center md:text-left order-2 lg:order-1 z-20 relative">
             <Fade cla direction={"up"} triggerOnce={true}>
               <p className="text-xs text-indigo-500 capitalize mb-4">GET STARTED WITH NFT DEVELOPMENT</p>
@@ -60,7 +60,7 @@ function NFTMarket() {
               </div>
             </Fade>
           </div>
-          <div className="order-1 lg:order-2 flex justify-center md:justify-start mb-20">
+          <div className="order-1 lg:order-2 flex justify-center md:justify-start lg:mb-20">
             <Fade className="w-full h-full" direction={"up"} triggerOnce={true}>
               <video
                 playsInline
