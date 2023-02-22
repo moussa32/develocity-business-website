@@ -20,10 +20,18 @@ const Footer = () => {
       </div>
       <div className="grid grid-cols-4 my-10">
         <Fade direction={"up"} triggerOnce={true}>
-          <img className="block mx-auto md:mx-2.5" src={`${Facebook}`} alt="Facebook icon" />
-          <img className="block mx-auto md:mx-2.5" src={`${Twitter}`} alt="Twitter icon" />
-          <img className="block mx-auto md:mx-2.5" src={`${Instagram}`} alt="Instagram icon" />
-          <img className="block mx-auto md:mx-2.5" src={`${Telegram}`} alt="Telegram icon" />
+          <a href="https://youtube.com/@develocitygroup">
+            <img className="block mx-auto md:mx-2.5" src={`${Facebook}`} alt="Facebook icon" />
+          </a>
+          <a href="https://twitter.com/develocitygroup">
+            <img className="block mx-auto md:mx-2.5" src={`${Twitter}`} alt="Twitter icon" />
+          </a>
+          <a href="https://instagram.com/deve_develocity">
+            <img className="block mx-auto md:mx-2.5" src={`${Instagram}`} alt="Instagram icon" />
+          </a>
+          {/* <a href="#">
+            <img className="block mx-auto md:mx-2.5" src={`${Telegram}`} alt="Telegram icon" />
+          </a> */}
         </Fade>
       </div>
     </div>
