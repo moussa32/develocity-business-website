@@ -16,7 +16,7 @@ const navigation = [
 const SideMenu = () => {
   return (
     <Disclosure as="nav" className="relative md:hidden z-30 bg-neutral-900/75">
-      {({ open }) => (
+      {({ open, close }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex h-16 items-center justify-between">
@@ -31,17 +31,13 @@ const SideMenu = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <img
-                src={`${navLogo}`}
-                alt="logo"
-                className="block md:hidden mx-auto"
-              />
+              <img src={`${navLogo}`} alt="logo" className="block md:hidden mx-auto" />
             </div>
           </div>
 
           <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3 bg-neutral-900/75">
-              {navigation.map((item) => (
+              {navigation.map(item => (
                 <Link
                   key={item.name}
                   to={item.target}
@@ -53,6 +49,7 @@ const SideMenu = () => {
                   offset={-150}
                   spy
                   smooth
+                  onClick={close}
                 >
                   {item.name}
                 </Link>
