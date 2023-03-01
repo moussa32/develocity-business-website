@@ -1,10 +1,7 @@
-import React from "react";
-import Navbar from "./Navbar";
 // import BloombergIcon from "../assets/Bloomberg.svg";
 // import WiredIcon from "../assets/Wired.svg";
 // import CoindeskIcons from "../assets/Coindesk.svg";
 // import YahooFinanceIcons from "../assets/YahooFinance.svg";
-import SideMenu from "./SideMenu";
 import HeaderBackground from "../assets/Header.mp4";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
 import { Fade } from "react-awesome-reveal";
@@ -16,10 +13,6 @@ const Empowering = ({ onOpenModal }) => {
         <source src={HeaderBackground} type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
-      <div className="fixed w-full z-40">
-        <SideMenu />
-        <Navbar />
-      </div>
       <Fade direction={"up"} triggerOnce={true} duration={2000}>
         <div className="container mx-auto lg:mx-0 mt-44 lg:mt-[230px] z-20">
           <div className="mx-auto w-full lg:mx-0 lg:ml-44 md:w-[593px] z-20">

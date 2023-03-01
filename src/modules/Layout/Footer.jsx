@@ -1,10 +1,9 @@
-import React from "react";
-import footerLogo from "../assets/footer-logo.svg";
-import Facebook from "../assets/Facebook.svg";
-import Twitter from "../assets/Twitter.svg";
-import Instagram from "../assets/Instagram.svg";
-import Telegram from "../assets/Telegram.svg";
+import footerLogo from "../../assets/footer-logo.svg";
+import Facebook from "../../assets/Facebook.svg";
+import Twitter from "../../assets/Twitter.svg";
+import Instagram from "../../assets/Instagram.svg";
 import { Fade } from "react-awesome-reveal";
+// import Telegram from "../assets/Telegram.svg";
 
 const Footer = () => {
   return (
