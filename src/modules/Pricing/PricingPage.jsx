@@ -5,9 +5,23 @@ import HeaderGradient from "../../assets/pricingPageHeaderGradient.png";
 import { ReactComponent as ContactSalesIcon } from "../../assets/ContactSales.svg";
 import { ReactComponent as SalesContactArrow } from "../../assets/SalesContactArrow.svg";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import HowItWorksModal from "../Modals/HowItWorksModal";
+import { useCallback, useState } from "react";
 
 const PricingPage = () => {
   const [isMatch] = useMediaQuery("(min-width: 767px)");
+  const [step, setStep] = useState("howItWork");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleCloseModal = useCallback(() => {
+    //When modal is closed it should reset the step
+    setStep("howItWork");
+    setIsOpen(false);
+  }, []);
+
+  const handleOpenModal = useCallback(() => {
+    setIsOpen(true);
+  }, []);
 
   return (
     <section className="bg-[#070707] relative text-neutral-50 pt-[150px] md:pt-[262px]">
@@ -36,7 +50,7 @@ const PricingPage = () => {
         </section>
       </section>
       <section className="footer-bg relative bg-center bg-no-repeat" style={{ backgroundSize: 1400 }}>
-        <section className="relative lg:py-9 text-center lg:text-left lg:px-[42px] gap-11 container max-w-[361px] lg:max-w-[1020px] flex flex-col lg:flex-row items-center bg-[#0D0D0D] rounded mt-[86px] mb-[192px]">
+        <section className="relative z-20 lg:py-9 text-center lg:text-left lg:px-[42px] gap-11 container max-w-[361px] lg:max-w-[1020px] flex flex-col lg:flex-row items-center bg-[#0D0D0D] rounded mt-[86px] mb-[192px]">
           <ContactSalesIcon className="absolute top-[-50px] lg:static" />
           <div>
             <h2 className="mt-[60px] font-medium text-[40px] lg:mt-0">
@@ -46,13 +60,22 @@ const PricingPage = () => {
               Let Us Know About Your Upcoming Project, and We'll Be in Touch Within One Business Day
             </p>
           </div>
-          <button className="absolute bottom-[-25px] lg:static flex flex-row items-center rounded w-[198px] px-5 py-3.5 bg-indigo-500 lg:ml-auto">
+          <button
+            onClick={handleOpenModal}
+            className="absolute bottom-[-25px] lg:static flex flex-row items-center rounded w-[198px] px-5 py-3.5 bg-indigo-500 lg:ml-auto"
+          >
             Get a Free Quote <SalesContactArrow className="ml-2" />
           </button>
         </section>
         <img src={GradientFooter} className="opacity-70 md:opacity-50 absolute w-full h-full bottom-0" />
         <Footer />
-      </section>{" "}
+      </section>
+      <div className="container mx-auto">
+        {step === "howItWork" && (
+          <HowItWorksModal isOpen={isOpen} onCloseModal={handleCloseModal} handleCurrentModal={setStep} />
+        )}
+        {step === "success" && <SuccessModal isOpen={isOpen} onCloseModal={handleCloseModal} />}
+      </div>
     </section>
   );
 };
