@@ -35,24 +35,24 @@ const PricingPage = () => {
           <PricingCard title="Advanced Financial Technology and Analytics Solutions" price={15000} />
         </section>
       </section>
-      <section className="relative lg:py-9 text-center lg:text-left lg:px-[42px] gap-11 container max-w-[361px] lg:max-w-[1020px] flex flex-col lg:flex-row items-center bg-[#0D0D0D] rounded mt-[86px] mb-[192px]">
-        <ContactSalesIcon className="absolute top-[-50px] lg:static" />
-        <div>
-          <h2 className="mt-[60px] font-medium text-[40px] lg:mt-0">
-            {isMatch ? "Contact our sales team" : "Contact us"}
-          </h2>
-          <p className="text-sm mb-[56px] text-neutral-400 max-w-[313px] lg:mb-0 lg:max-w-[377px] lg:text-base">
-            Let Us Know About Your Upcoming Project, and We'll Be in Touch Within One Business Day
-          </p>
-        </div>
-        <button className="absolute bottom-[-25px] lg:static flex flex-row items-center rounded w-[198px] px-5 py-3.5 bg-indigo-500 lg:ml-auto">
-          Get a Free Quote <SalesContactArrow className="ml-2" />
-        </button>
-      </section>
-      <div className="footer-bg relative bg-center bg-no-repeat">
+      <section className="footer-bg relative bg-center bg-no-repeat">
+        <section className="relative lg:py-9 text-center lg:text-left lg:px-[42px] gap-11 container max-w-[361px] lg:max-w-[1020px] flex flex-col lg:flex-row items-center bg-[#0D0D0D] rounded mt-[86px] mb-[192px]">
+          <ContactSalesIcon className="absolute top-[-50px] lg:static" />
+          <div>
+            <h2 className="mt-[60px] font-medium text-[40px] lg:mt-0">
+              {isMatch ? "Contact our sales team" : "Contact us"}
+            </h2>
+            <p className="text-sm mb-[56px] text-neutral-400 max-w-[313px] lg:mb-0 lg:max-w-[377px] lg:text-base">
+              Let Us Know About Your Upcoming Project, and We'll Be in Touch Within One Business Day
+            </p>
+          </div>
+          <button className="absolute bottom-[-25px] lg:static flex flex-row items-center rounded w-[198px] px-5 py-3.5 bg-indigo-500 lg:ml-auto">
+            Get a Free Quote <SalesContactArrow className="ml-2" />
+          </button>
+        </section>
         <img src={GradientFooter} className="opacity-70 md:opacity-50 absolute w-full h-full bottom-0" />
         <Footer />
-      </div>
+      </section>{" "}
     </section>
   );
 };
