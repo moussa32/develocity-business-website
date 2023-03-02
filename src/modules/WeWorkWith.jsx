@@ -17,7 +17,7 @@ import BlockchainesCard from "./BlockchainesCard";
 
 function WeWorkWith() {
   return (
-    <div className="bg-black text-center my-16">
+    <div className="text-center my-16">
       <div className="container mx-auto">
         <Fade direction={"up"} triggerOnce={true}>
           <p className="text-xs text-indigo-400 capitalize">TOP BLOCKCHAINS ARE AT YOUR DISPOSAL</p>
