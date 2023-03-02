@@ -35,7 +35,7 @@ const PricingPage = () => {
           <PricingCard title="Advanced Financial Technology and Analytics Solutions" price={15000} />
         </section>
       </section>
-      <section className="footer-bg relative bg-center bg-no-repeat">
+      <section className="footer-bg relative bg-center bg-no-repeat" style={{ backgroundSize: 1400 }}>
         <section className="relative lg:py-9 text-center lg:text-left lg:px-[42px] gap-11 container max-w-[361px] lg:max-w-[1020px] flex flex-col lg:flex-row items-center bg-[#0D0D0D] rounded mt-[86px] mb-[192px]">
           <ContactSalesIcon className="absolute top-[-50px] lg:static" />
           <div>
