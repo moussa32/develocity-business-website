@@ -1,4 +1,3 @@
-import DoubleArrowIcon from "../assets/images/DoubleArrowIcon.svg";
 import FirstDeveSectionIcon from "../assets/FirstDeveSectionIcon.svg";
 import SecDeveSectionIcon from "../assets/SecDeveSectionIcon.svg";
 import HeaderGradient from "../assets/pricingPageHeaderGradient.png";

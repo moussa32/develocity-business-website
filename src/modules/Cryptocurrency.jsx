@@ -1,10 +1,12 @@
 import React from "react";
 import CryptoVideo from "../assets/Cryptocurrency.mp4";
 import { Fade } from "react-awesome-reveal";
+import HeaderGradient from "../assets/pricingPageHeaderGradient.png";
 
 const Cryptocurrency = () => {
   return (
-    <div className="container text-center md:text-left lg:mt-20 md:mb-[211px]">
+    <div className="container relative text-center md:text-left lg:mt-20 md:pb-[211px]">
+      <img className="absolute bottom-[-500px] right-[-45rem]" src={HeaderGradient} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <div className="h-[300px] sm:h-[400px] xl:h-full">
           <Fade className="h-full w-full relative lg:h-full" direction={"up"} triggerOnce={true}>
@@ -21,7 +23,7 @@ const Cryptocurrency = () => {
             </video>
           </Fade>
         </div>
-        <div className="mx-auto max-w-[488px] lg:mx-0 lg:ml-auto">
+        <div className="mx-auto max-w-[488px] relative z-20 lg:mx-0 lg:ml-auto">
           <Fade direction={"up"} triggerOnce={true}>
             <span className="uppercase text-xs text-indigo-500 mb-4 block">Cryptocurrency Creation</span>
             <h4 className="text-3xl md:text-4xl font-normal mb-6">

@@ -1,8 +1,11 @@
 import { Fade } from "react-awesome-reveal";
+import HeaderGradient from "../assets/pricingPageHeaderGradient.png";
 
 const TechnologySection = () => {
   return (
-    <section className="text-center mt-[191px] container mx-auto">
+    <section className="text-center mt-[191px] container mx-auto relative">
+      <img className="absolute left-[-700px] top-[-400px]" src={HeaderGradient} />
+
       <Fade direction={"up"} triggerOnce={true}>
         <span className="uppercase text-indigo-400 text-xs">TOP BLOCKCHAINS ARE AT YOUR DISPOSAL</span>
         <h2 className="text-4xl lg:text-6xl text-PolySans font-light mt-3">Technologies we work with</h2>
@@ -17,7 +20,7 @@ const TechnologySection = () => {
             <span className="text-base text-[#a3a3a3] font-extralight">TypeScript</span>
             <span className="text-base text-[#a3a3a3] font-extralight">Docker</span>
             <span className="text-base text-[#a3a3a3] font-extralight">Node.js</span>
-        </div>
+          </div>
         </Fade>
       </div>
       <div className="lg:text-left lg:flex-row items-center gap-y-6 flex flex-col border-b-2 border-neutral-800 pb-6 mt-11">
