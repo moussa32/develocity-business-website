@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 const DeveSection = () => {
   return (
-    <div className="bg-black text-center py-[95px] relative overflow-hidden">
+    <div className="text-center py-[95px] relative overflow-hidden">
       <img
         className="absolute transform -translate-x-1/2 top-[-100px] md:top-[-25%] lg:top-[-400px] left-1/2"
         src={HeaderGradient}
