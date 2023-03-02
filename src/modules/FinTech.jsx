@@ -47,7 +47,9 @@ const FinTech = () => {
                 Your browser does not support HTML5 video.
               </video>
             </div>
+          </Fade>
 
+          <Fade direction={"up"} triggerOnce={true}>
             <h3 className="mt-12 text-xl font-medium z-20">Advanced analytics</h3>
             <p className="text-base text-neutral-400 mt-2 z-20">
               Make better, faster, data-based decisions. Recognize opportunities, mitigate risk, spot trends, stay ahead
