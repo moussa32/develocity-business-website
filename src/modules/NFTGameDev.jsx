@@ -3,6 +3,10 @@ import Autodesk from "../assets/Autodesk.png";
 import Blender from "../assets/Blender.png";
 import Unity from "../assets/Unity.png";
 import UnrealEngine from "../assets/UnrealEngine.png";
+import { ReactComponent as PlayToEarnIcon } from "../assets/PlayToEarnIcon.svg";
+import { ReactComponent as MoveToEarnIcon } from "../assets/MoveToEarnIcon.svg";
+import { ReactComponent as PlayerVsPlayerIcon } from "../assets/PlayerVsPlayerIcon.svg";
+import HeaderGradient from "../assets/pricingPageHeaderGradient.png";
 
 import { Fade } from "react-awesome-reveal";
 
@@ -61,8 +65,11 @@ function NFTGameDev() {
       </div>
 
       <div className="relative z-20 grid grid-cols-1 gap-6 gap-x-8 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px]">
-          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8 mx-auto xl:mx-0"></div>
+        <img className="absolute  top-[-100px] md:top-[-25%] lg:top-[-292px] right-[-33rem]" src={HeaderGradient} />
+        <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px] relative z-20">
+          <div className="mb-8 mx-auto xl:mx-0">
+            <PlayToEarnIcon />
+          </div>
           <h3 className="mb-6 font-medium text-xl max-w-[257px] mx-auto xl:mx-0">Play-to-Earn Game Development</h3>
           <p className="text-base text-neutral-400">
             Launch a P2E game like Axie Infinity or Sorare. Give your users a chance to create an income stream by
@@ -70,8 +77,10 @@ function NFTGameDev() {
             build a customized play-to-earn game with exhilarating gameplay.
           </p>
         </div>
-        <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px]">
-          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8 mx-auto xl:mx-0"></div>
+        <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px] relative z-20">
+          <div className="mb-8 mx-auto xl:mx-0">
+            <MoveToEarnIcon />
+          </div>
           <h3 className="mb-6 font-medium text-xl max-w-[257px] mx-auto xl:mx-0">Move-to-Earn Game Development</h3>
           <p className="text-base text-neutral-400">
             StepN is a buzzword among online gamers. StepN NFTs generated a profit of over $26.8 million in Q1 2022.
@@ -79,8 +88,10 @@ function NFTGameDev() {
             provides well-thought-out services to develop and deliver your gaming platform.
           </p>
         </div>
-        <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px]">
-          <div className="rounded-full w-[84px] h-[84px] bg-indigo-500 mb-8 mx-auto xl:mx-0"></div>
+        <div className="bg-[#0D0D0D] px-6 py-8 rounded-[20px] relative z-20">
+          <div className="mb-8 mx-auto xl:mx-0">
+            <PlayerVsPlayerIcon />
+          </div>
           <h3 className="mb-6 font-medium text-xl max-w-[257px] mx-auto xl:mx-0">Player-vs-Player Game Development</h3>
           <p className="text-base text-neutral-400">
             Gods Unchained is one of the popular games where players gather cards by either buying them from other

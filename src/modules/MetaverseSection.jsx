@@ -1,4 +1,3 @@
-import DoubleArrowIcon from "../assets/images/DoubleArrowIcon.svg";
 import EmptyCircal from "../assets/images/EmptyCircal.png";
 import GoArrowIcon from "../assets/images/GoArrowIcon.png";
 import MetaverseVdieo from "../assets/Metaverse.mp4";
@@ -8,6 +7,10 @@ import { GiVirtualMarker } from "react-icons/gi";
 import { FaArtstation } from "react-icons/fa";
 import { TbSocial } from "react-icons/tb";
 import { CgClapperBoard } from "react-icons/cg";
+import HeaderGradient from "../assets/pricingPageHeaderGradient.png";
+import { ReactComponent as ContactSalesIcon } from "../assets/ContactSales.svg";
+import { ReactComponent as SalesContactArrow } from "../assets/SalesContactArrow.svg";
+
 import { AiOutlineProject } from "react-icons/ai";
 
 const MetaverseSection = ({ onOpenModal }) => {
@@ -20,7 +23,7 @@ const MetaverseSection = ({ onOpenModal }) => {
           </h2>
         </Fade>
         <div className="md:grid md:grid-cols-3">
-          <div className="text-center mx-auto lg:mx-0 max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-right z-20">
+          <div className="text-center mx-auto lg:mx-0 max-w-[324px] py-8 gap-4 flex flex-col justify-evenly lg:text-right z-20">
             <div className="z-20">
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Interoperable</h3>
@@ -53,7 +56,7 @@ const MetaverseSection = ({ onOpenModal }) => {
               Your browser does not support HTML5 video.
             </video>
           </Fade>
-          <div className="text-center mx-auto lg:mx-0 max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-left">
+          <div className="text-center ml-8 max-w-[344px] py-8 gap-4 flex flex-col justify-evenly lg:text-left">
             <div>
               <Fade direction={"up"} triggerOnce={true}>
                 <h3 className="text-xl">Scalable</h3>
@@ -75,7 +78,7 @@ const MetaverseSection = ({ onOpenModal }) => {
           </div>
         </div>
       </section>
-      <section className="text-center mt-20 py-20">
+      <section className="relative z-20 text-center mt-20 py-20">
         <Fade direction={"up"} triggerOnce={true}>
           <span className="text-xs text-indigo-400 uppercase">FIND YOUR PERFECT APPLICATION</span>
           <h2 className="text-PolySans text-[48px] font-light">Multitude of Metaverse Use Cases</h2>
@@ -166,21 +169,27 @@ const MetaverseSection = ({ onOpenModal }) => {
           </div>
         </div>
       </section>
-      <section className="bg-neutral-900 p-11 flex flex-col lg:flex-row items-center max-w-[1020px] mx-auto rounded gap-10">
+      <section className="relative">
+        <img
+          className="absolute transform -translate-x-1/2 top-[-100px] md:top-[-25%] lg:top-[-400px] left-1/2"
+          src={HeaderGradient}
+        />
         <Fade direction={"up"} triggerOnce={true}>
-          <img src={EmptyCircal} alt="empty" />
-          <div className="text-center lg:text-left">
-            <h2 className="text-5xl">And there's more</h2>
-            <p className="mt-2 text-neutral-400 text-base max-w-[377px]">
-              Tell us about your future Metaverse project, and we will contact you within one business day.
-            </p>
-          </div>
-          <button
-            onClick={onOpenModal}
-            className="bg-indigo-500 hover:bg-indigo-700 transition ease-in-out duration-500 cursor-pointer py-3.5 px-5 mx-auto lg:mx-0 lg:ml-auto rounded flex items-center gap-3"
-          >
-            Get a Quote <img src={GoArrowIcon} alt="go arrow" />
-          </button>
+          <section className="relative lg:py-9 text-center lg:text-left lg:px-[42px] gap-11 container max-w-[361px] lg:max-w-[1020px] flex flex-col lg:flex-row items-center bg-[#0D0D0D] rounded mt-[86px] mb-[192px]">
+            <ContactSalesIcon className="absolute top-[-50px] lg:static" />
+            <div>
+              <h2 className="mt-[60px] font-medium text-[40px] lg:mt-0">And there's more </h2>
+              <p className="text-sm mb-[56px] text-neutral-400 max-w-[313px] lg:mb-0 lg:max-w-[377px] lg:text-base">
+                Tell us about your future Metaverse project, and we will contact you within one business day.
+              </p>
+            </div>
+            <button
+              onClick={onOpenModal}
+              className="absolute bottom-[-25px] lg:static flex flex-row items-center rounded w-[198px] px-5 py-3.5 bg-indigo-500 lg:ml-auto"
+            >
+              Get a Free Quote <SalesContactArrow className="ml-2" />
+            </button>
+          </section>
         </Fade>
       </section>
     </div>
