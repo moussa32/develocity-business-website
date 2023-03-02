@@ -2,6 +2,7 @@ import DoubleArrowIcon from "../assets/images/DoubleArrowIcon.svg";
 import FirstDeveSectionIcon from "../assets/FirstDeveSectionIcon.svg";
 import SecDeveSectionIcon from "../assets/SecDeveSectionIcon.svg";
 import HeaderGradient from "../assets/pricingPageHeaderGradient.png";
+import QualityDrivenTeamIcon from "../assets/QualityDrivenTeam.svg";
 import { Fade } from "react-awesome-reveal";
 
 const DeveSection = () => {
@@ -41,7 +42,7 @@ const DeveSection = () => {
           </Fade>
           <Fade direction={"up"} triggerOnce={true}>
             <div className="bg-[#0D0D0D] p-5 rounded-lg h-full">
-              <img src={DoubleArrowIcon} alt="double arrow" title="double arrow" />
+              <img src={QualityDrivenTeamIcon} alt="double arrow" title="double arrow" />
               <h4 className="text-white mt-8 text-xl">Quality-driven team</h4>
               <p className="text-neutral-400 mt-2.5 leading-relaxed">
                 We’re obsessed with quality development and strive for perfection. Our project and delivery managers
