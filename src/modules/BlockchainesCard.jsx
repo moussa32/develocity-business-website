@@ -1,6 +1,4 @@
-import Arrow from "../assets/Arrow.png";
-
-const BlockchainesCard = ({ backgroundCrucial, title, img, activeImg, url }) => {
+const BlockchainesCard = ({ backgroundCrucial, title, img, activeImg }) => {
   return (
     <div className="mb-6 relative flex justify-center group">
       <div className="z-0 absolute h-16 w-16 -top-7">
@@ -22,14 +20,6 @@ const BlockchainesCard = ({ backgroundCrucial, title, img, activeImg, url }) => 
             />
             <span className="text-xl z-20">{title}</span>
           </div>
-          <a
-            href={url}
-            target="_blank"
-            className="text-sm mx-3 flex opacity-0 group-hover:opacity-100 z-20 transition duration-1000 ease-in-out"
-          >
-            {url}
-            <img className="ml-5 pb-1" src={`${Arrow}`} />
-          </a>
         </div>
       </div>
     </div>
