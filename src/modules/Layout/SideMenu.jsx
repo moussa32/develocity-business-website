@@ -18,7 +18,7 @@ const navigation = [
 const SideMenu = () => {
   const { pathname } = useLocation();
   return (
-    <Disclosure as="nav" className="relative md:hidden z-30">
+    <Disclosure as="nav" className="relative md:hidden z-30 bg-neutral-900/75">
       {({ open, close }) => (
         <>
           <div className="mx-auto max-w-7xl px-8 pt-10">
