@@ -12,7 +12,7 @@ const navigation = [
   { name: "NFT", target: "NFT" },
   { name: "Metaverse", target: "Metaverse" },
   { name: "DeFi", target: "DeFi" },
-  { name: "Pricing", href: "/pricing" },
+  // { name: "Pricing", href: "/pricing" },
 ];
 
 const SideMenu = () => {
