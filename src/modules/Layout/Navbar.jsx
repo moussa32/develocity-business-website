@@ -128,7 +128,7 @@ const Navbar = () => {
           </Link>
         )}
 
-        <RouterLink
+        {/* <RouterLink
           to="/pricing"
           className={`font-medium transition duration-500 ${
             pathname.includes("pricing") ? "text-indigo-400 bg-[#00000080]" : null
@@ -136,7 +136,7 @@ const Navbar = () => {
           rel="dofollow"
         >
           Pricing
-        </RouterLink>
+        </RouterLink> */}
       </div>
     </nav>
   );
