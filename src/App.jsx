@@ -3,6 +3,7 @@ import Home from "./modules/Home";
 import Layout from "./modules/Layout/Layout";
 import PricingPage from "./modules/Pricing/PricingPage";
 import { Helmet } from "react-helmet";
+import ReactGA from "react-ga4";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
+ReactGA.initialize("G-8N6GD6KRDV");
 
 const App = () => {
   return (
