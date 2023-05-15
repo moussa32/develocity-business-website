@@ -33,6 +33,11 @@ const App = () => {
           name="keywords"
           content="blockchain development, NFT marketplace, NFT gaming, mobile app development, SaaS development, digital transformation, Develocity Ssolutions, decentralized technology, non-fungible tokens, innovative solutions"
         />
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico"></link>
+        <link rel="apple-touch-icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="72×72" href="/apple-icon-72x72.PNG" />
+        <link rel="apple-touch-icon" sizes="114X114" href="/apple-icon-114x114.PNG" />
       </Helmet>
       <RouterProvider router={router} />
     </>
